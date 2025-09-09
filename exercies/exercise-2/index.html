@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Exercise</title>
+    <style>
+        #container {
+            width: 600px;
+            height: 600px;
+            border: 10px solid rgb(190, 190, 190);
+            position: relative;
+        }
+        #box-1 {
+         position: absolute;
+         width: 200px;
+         height: 200px;
+         background-color: red;
+         top: 100px;
+         left: 100px;
+         z-index: -2;
+        }
+        #box-2 {
+         position: absolute;
+         width: 200px;
+         height: 200px;
+         background-color: rgb(0, 255, 0);
+         top: 200px;
+         left: 200px;
+         z-index: 2;
+        }
+        #box-3 {
+         width: 200px;
+         height: 200px;
+         background-color: blue;
+         position: absolute;
+         top: 300px;
+         left: 300px;
+         z-index: 3;
+        }
+    </style>
+</head>
+<h1>Exercise 2: CSS Box Model Exercise</h1>
+<body>
+    <div id="container">
+     <div id="box-1"></div>
+     <div id="box-2"></div>
+     <div id="box-3"></div>
+    </div>
+</body>
+</html>
