@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        /*height: 100px;*/
+        background-color: lightblue;
+        border: 1px solid black;
+      }
+      /* Utility Class */
+      .row,
+      .flex {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+      }
+      .row > div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div style="background-color: pink">
+        <h2>My subtitle</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+          corporis cupiditate veniam quos laudantium quis autem voluptate
+          maxime, sunt debitis omnis sapiente natus pariatur similique
+          consequuntur quia minima! Aspernatur incidunt debitis quasi distinctio
+          voluptas placeat adipisci perspiciatis, dignissimos a nostrum saepe
+          eveniet quis nisi
+        </p>
+      </div>
+      <div>
+        <img src="https://placehold.co/600x400" alt="" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div>Div 1</div>
+      <div>Div 2</div>
+      <div>Div 3</div>
+      <div>Div 4</div>
+      <div>Div 5</div>
+      <div>Div 6</div>
+      <div>Div 7</div>
+      <div>Div 8</div>
+    </div>
+    <!--
+    <div class="row">
+      <div>Div 1</div>
+      <div>Div 2</div>
+      <div>Div 3</div>
+      <div>Div 4</div>
+    </div>
+
+    <div class="row">
+      <div>Div 1</div>
+      <div>Div 2</div>
+      <div>Div 3</div>
+    </div>
+    -->
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #ccc;
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        max-width: 1000px;
+        background-color: #fff;
+        margin: 0 auto;
+        padding: 0.5rem;
+      }
+      h1 {
+        text-align: center;
+      }
+      header,
+      nav,
+      footer {
+        padding: 1rem;
+        text-align: center;
+        margin: 1rem;
+        background-color: #ccc;
+      }
+      .row {
+        display: flex;
+        gap: 20px;
+        padding: 0 20px;
+      }
+      article {
+        background-color: chocolate;
+        width: 50%;
+      }
+      aside {
+        background: chartreuse;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Two Column Flex</h1>
+    <!-- Container -->
+    <main>
+      <header>Header</header>
+      <nav>Navigation goes here.</nav>
+      <!-- Two Column Layout -->
+      <div class="row">
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+            ducimus fugit ratione quasi eum repellendus et, mollitia iusto
+            assumenda aliquid labore in iure numquam nemo esse quam ipsum dolor
+            corporis placeat ea illum natus adipisci quisquam culpa! Inventore,
+            facilis rerum!
+          </p>
+        </article>
+        <aside>col2</aside>
+      </div>
+      <!-- Footer -->
+      <footer>Footer</footer>
+    </main>
+  </body>
+</html>

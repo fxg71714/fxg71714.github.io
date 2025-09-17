@@ -1,66 +1,90 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Assignment 3</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <style>
         body{
             background-color: grey;
         }
-        div {
-            height: 100px;
-            background-color: white;
+        
+        #site-header{
+        background-color: white;
+        padding: 2em 2em;
+      }
+        .col-100{
             border: 1px solid black;
+            margin: 0 auto;
             text-align: center;
-            place-content: center;
-         }
-         .row, 
-         .flex{
+            padding: 2em 4em;
+            max-width: 1440px;
+        }
+       
+        #content{
+            background-color: white;
+            margin: 0 auto;
+            margin-top: 2em;
+            max-width: 1440px;
+            padding: 2em;
+            border-radius: 1em;
+            
+    
+        }
+        .row{
             display: flex;
             flex-direction: row;
-            max-width: 1440px;
-         }
-        
-         .header{
-            
-            width: 1440px;
-         }
-          .col-a{
+        }
+        .row > div{
+            border: 1px solid black;
+            flex-grow: 1;
+            text-align: center;
+            padding: 2em 1em;
+        }
+        .col-a{
             width: 1240px;
-         }
-        
-         .col-b{
+        }
+        .col-b{
             width: 200px;
-         }
-         .col-50{
-            width: 50%;
-         }
-         .col-33{
-            width: 33%;
-         }
-        
+        }
     </style>
-</head>
-<body>
-    <div class="row">
-        <div class="header">Header</div>
-    </div>
-    <div class="row">
-        <div class="col-a">col-a</div>
-        <div class="col-b">col-b</div>
-    </div>
-    <div class="row">
-        <div class="col-50">col-50</div>
-        <div class="col-50">col-50</div>
-    </div>
-    <div class="row">
-        <div class="col-33">col-33</div>
-        <div class="col-33">col-33</div>
-        <div class="col-33">col-33</div>
-    </div>
-      <div class="row">
-        <div class="header">footer: col-100</div>
-    </div>
-</body>
+  </head>
+  <body>
+    <header id="site-header">
+      <div>
+        <div class="col-100">
+          header: col-100<br />This entire layout is 1440px wide
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="content">
+        <div class="row">
+          <div class="col-a">col-a</div>
+          <div class="col-b">col-b<br />(width 200px)</div>
+        </div>
+
+        <div class="row">
+          <div class="col-50">col-50</div>
+          <div class="col-50">col-50</div>
+        </div>
+
+        <div class="row">
+          <div class="col-33">col-33</div>
+          <div class="col-33">col-33</div>
+          <div class="col-33">col-33</div>
+        </div>
+
+        <div class="row">
+          <div class="col-101">footer: col-100</div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
