@@ -1,0 +1,23 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1920px;
+}
+.menu-bar{
+    width: 1920px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(211, 211, 211);
+}
+.menu-bar > div {
+    padding: 100px;
+}
+
+.discover{
+    display: flex;
+    width: 1600px;
+    background-color: gray;
+
+}
