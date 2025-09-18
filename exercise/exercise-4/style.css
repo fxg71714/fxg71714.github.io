@@ -16,3 +16,6 @@
 h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+body#home nav li:nth-child(1) a {
+    font-weight: bold;
+}

@@ -3,6 +3,7 @@ body{
     padding: 0;
     max-width: 1920px;
 }
+
 .menu-bar{
     width: 1920px;
     height: 112px;
@@ -14,10 +15,17 @@ body{
 .menu-bar > div {
     padding: 100px;
 }
-
+.discover-box{
+    margin: 0 auto;
+    width: 1600px;
+}
 .discover{
     display: flex;
     width: 1600px;
     background-color: gray;
 
 }
+height
+back img url (images/imagename)
+back repeat no repeat 
+back size cover
