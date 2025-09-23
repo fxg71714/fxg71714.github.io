@@ -1,31 +1,137 @@
 body{
     margin: 0 auto;
     padding: 0;
-    max-width: 1920px;
+    max-width: 1920px; 
+}
+
+.noto-sans {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.hero-img{
+    height: 870;
+    background-image: url("https://placehold.co/1920x874");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .menu-bar{
-    width: 1920px;
+    max-width: 1920px;
     height: 112px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:  rgb(211, 211, 211);
-}
-.menu-bar > div {
-    padding: 100px;
-}
-.discover-box{
-    margin: 0 auto;
-    width: 1600px;
-}
-.discover{
-    display: flex;
-    width: 1600px;
-    background-color: gray;
+    text-transform: uppercase;
+    font-size: 24px;
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
+
 
 }
-height
-back img url (images/imagename)
-back repeat no repeat 
-back size cover
+.menu-text {
+    padding: 50px;
+}
+.menu-text-logo{
+    padding: 90px;
+    font-size: 32px;
+}
+.menu-divider-blue{
+    width: 5px;
+    height: 50px;
+    background-color: #00273E;
+}
+.menu-divider-org{
+    width: 5px;
+    height: 50px;
+    background-color: #BB6600;
+}
+
+.layout{
+    margin: 0 auto;
+    width: 1400px;
+}
+.heading{
+    padding-top: 100px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    font-size: 32px;
+    
+}
+.d-02{
+    display: flex;
+    width: 1360px;
+    gap:630px;
+    align-items: baseline;
+}
+.d-02a{
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+.d-02b{
+    font-size: 20px;
+}
+
+.discover-cards{
+    display: flex;
+    width: 1400px;
+   gap: 10px;
+   margin-bottom: 8px;
+}
+.dc-02{
+    width: 450px;
+}
+.dc-divider-org{
+    width: 10px;
+    height: 400px;
+    background-color: #BB6600;
+    
+}
+.dc-divider-blue{
+    width: 10px;
+    height: 400px;
+    background-color: #00273E;
+    
+}
+.highlights{
+    display: flex;
+    width: 1400px;
+    justify-content: center;
+    align-items: center;
+}
+.highlights-card{
+    width: 420px;
+    height: 380px;
+    margin-right: 10px;
+   background-color: white;
+}
+.highlights-card-text{
+    padding: 20px;
+}
+.highlights-card-title{
+    font-size: 24px;
+}
+.org-box{
+   margin: -280px auto;
+    z-index: -2;
+}
+.dark-org-box{
+    width: 1400px;
+    height: 10px;
+    background-color: #BB6600;
+}
+.light-org-box{
+    width: 1400px;
+    height: 290px;
+    background-color: #D99F59;
+}
+.quiz-intro{
+    margin-top: 280px;
+    width: 920px;
+    padding-top: 120px;
+    text-align: center;
+}
