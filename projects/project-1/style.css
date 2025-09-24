@@ -314,3 +314,26 @@ body{
     height: 360px;
     background-position: center;
 }
+.img07{
+     background-image: url(../../images/jeff-mclain-mndQSsTkUxI-unsplash.jpg);
+     
+    width: 420px;
+    height: 250px;
+    background-position: center;
+}
+.img08{
+     background-image: url(../../images/mihai-moisa-Djtc1T38-GY-unsplash.jpg);
+     
+    width: 420px;
+    height: 250px;
+    background-position: center;
+}
+
+.img09{
+     background-image: url(../../images/judith-chambers-5lkCWYmLsl0-unsplash.jpg);
+     
+    width: 420px;
+    height: 250px;
+    background-position: center;
+}
+
