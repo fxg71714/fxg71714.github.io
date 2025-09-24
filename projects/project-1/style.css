@@ -2,6 +2,7 @@ body{
     margin: 0 auto;
     padding: 0;
     max-width: 1920px; 
+    color: #00273E;
 }
 
 .noto-sans {
@@ -14,13 +15,39 @@ body{
 }
 
 .hero-img{
+    background-image: url(../../images/adventure-albania-wSFub7VcwOc-unsplash.jpg);
+    width: 1920px;
+    height: 870px;
+    background-position: center;
+}
+/**.hero-img{
     height: 870;
     background-image: url("https://placehold.co/1920x874");
     background-repeat: no-repeat;
     background-size: cover;
+} **/
+
+.popup-boxr{
+    width: 800px;
+    height: 120px;
+    background-color: white;
+}
+.popup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 720px;
+    height: 140px;
+    font-size: 36px;
+    font-weight: 600;
+    padding-left: 150px;
+    margin-top: -300px;
+    background-color: white;
+
 }
 
 .menu-bar{
+    margin-top: 220px;
     max-width: 1920px;
     height: 112px;
     display: flex;
@@ -75,7 +102,14 @@ body{
 .d-02b{
     font-size: 20px;
 }
-
+.a href{
+    text-decoration: none;
+    color: #00273E;
+}
+.a:visited{
+    text-decoration: none;
+    color: #00273E;
+}
 .discover-cards{
     display: flex;
     width: 1400px;
@@ -83,17 +117,35 @@ body{
    margin-bottom: 8px;
 }
 .dc-02{
+    color: #00273E;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 450px;
+}
+.dc-head{
+    font-weight: bold;
+    font-size: 22px;
+
+   
+}
+.dc-subhead{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.dc-link{
+    font-weight: 600;
+    margin-top: 20px;
 }
 .dc-divider-org{
     width: 10px;
-    height: 400px;
+    height: 360px;
     background-color: #BB6600;
     
 }
 .dc-divider-blue{
     width: 10px;
-    height: 400px;
+    height: 360px;
     background-color: #00273E;
     
 }
@@ -116,7 +168,7 @@ body{
     font-size: 24px;
 }
 .org-box{
-   margin: -280px auto;
+   margin: -240px auto;
     z-index: -2;
 }
 .dark-org-box{
@@ -129,9 +181,136 @@ body{
     height: 290px;
     background-color: #D99F59;
 }
-.quiz-intro{
-    margin-top: 280px;
+.quiz-intro-container{
     width: 920px;
-    padding-top: 120px;
+    margin: 0 auto;
+    padding-top: 360px;
+    padding-bottom: 40px;
+}
+.quiz-intro{
+    font-size: 24px;
     text-align: center;
+}
+.opaque-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.quiz-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -250px;
+}
+.quiz-box-text{
+    display: block;
+    padding-top: 110px;
+    color: white;
+    text-align: center;
+    width: 780px;
+    height: 160px;
+    font-size: 24px;
+    background-color: rgba(0, 39, 62, .7);  
+}
+.qb-text-02{
+    font-size: 36px;
+    text-transform: uppercase;
+}
+.footer-01{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.logo{
+    font-size: 64px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    margin-top: 250px;
+}
+.contact-01{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-weight: 700;
+}
+.contact-01-text{
+    padding: 0 40px;
+    text-transform: uppercase; 
+}
+.contact-01-divider{
+    margin: 0 20px;
+    width: 3px;
+    height: 25px;
+    background-color: #00273E;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    color:#00273E;
+}
+.footer-menu{
+    margin: 10px 50px 30px 30px;
+}
+.footer-line{
+    margin-top: 20px;
+    width: 1400px;
+    height: 5px;
+    background-color: #BB6600;
+}
+.footer-logo-01{
+    margin-left: 18px;
+}
+.footer-logo-02{
+    margin-left: 20px;
+}
+.copyright{
+    margin-left: 800px;
+}
+.img01{
+     background-image: url(../../images/ian-romie-ona-x6QdZQkuroI-unsplash.jpg);
+     
+    width: 465px;
+    height: 360px;
+    background-position: center;
+}
+.img02{
+     background-image: url(../../images/tommy-kwak-o0AHAJINifo-unsplash.jpg);
+    width: 465px;
+    height: 360px;
+    background-position: center;
+}
+.img03{
+     background-image: url(../../images/katherine-mcadoo-HLKNH1-ITr0-unsplash.jpg);
+     
+    width: 465px;
+    height: 360px;
+    background-position: center;
+}
+.img04{
+     background-image: url(../../images/danil-LSni9LQW5Fo-unsplash.jpg);
+     
+    width: 465px;
+    height: 360px;
+    background-position: center;
+}
+.img05{
+     background-image: url(../../images/ivan-rohovchenko--lS784zn0Tw-unsplash.jpg);
+     
+    width: 465px;
+    height: 360px;
+    background-position: center;
+}
+.img06{
+     background-image: url(../../images/northleg-official-yDX1yFJUMjg-unsplash.jpg);
+     
+    width: 465px;
+    height: 360px;
+    background-position: center;
 }
