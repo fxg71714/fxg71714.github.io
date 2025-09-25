@@ -16,9 +16,11 @@ body{
 
 .hero-img{
     background-image: url(../../images/adventure-albania-wSFub7VcwOc-unsplash.jpg);
-    width: 1920px;
+    width: 100%;
     height: 870px;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /**.hero-img{
     height: 870;
@@ -27,11 +29,7 @@ body{
     background-size: cover;
 } **/
 
-.popup-boxr{
-    width: 800px;
-    height: 120px;
-    background-color: white;
-}
+
 .popup{
     display: flex;
     align-items: center;
@@ -43,6 +41,7 @@ body{
     padding-left: 150px;
     margin-top: -300px;
     background-color: white;
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.8);
 
 }
 
@@ -56,8 +55,25 @@ body{
     text-transform: uppercase;
     font-size: 24px;
     box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
-
-
+}
+.menu-bar ul{
+    padding-left: 0;
+}
+.menu-bar li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 60px;
+}
+.menu-bar li:first-child {
+    border-left: none;
+}
+.menu-bar li:hover{
+    color: #BB6600;
+}
+.menu-bar li:nth-child(3){
+    pointer-events: none;
+    font-size: 36px;
+  
 }
 .menu-text {
     padding: 50px;
@@ -84,7 +100,6 @@ body{
 .heading{
     padding-top: 100px;
     padding-bottom: 10px;
-    padding-left: 40px;
     font-size: 32px;
     
 }
@@ -102,14 +117,7 @@ body{
 .d-02b{
     font-size: 20px;
 }
-.a href{
-    text-decoration: none;
-    color: #00273E;
-}
-.a:visited{
-    text-decoration: none;
-    color: #00273E;
-}
+
 .discover-cards{
     display: flex;
     width: 1400px;
@@ -160,26 +168,25 @@ body{
     height: 380px;
     margin-right: 10px;
    background-color: white;
+   box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
 }
 .highlights-card-text{
     padding: 20px;
 }
 .highlights-card-title{
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 5px;
 }
 .org-box{
    margin: -240px auto;
     z-index: -2;
 }
-.dark-org-box{
-    width: 1400px;
-    height: 10px;
-    background-color: #BB6600;
-}
+
 .light-org-box{
     width: 1400px;
-    height: 290px;
-    background-color: #D99F59;
+    height: 300px;
+    background-color: #b60;
     box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
 }
 .quiz-intro-container{
@@ -195,7 +202,7 @@ body{
 .opaque-box-container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 300px;
    
 }
@@ -203,21 +210,25 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -250px;
+    margin: -275px;
 }
 .quiz-box-text{
-    display: block;
-    padding-top: 110px;
+    display: inline;
+    padding-top: 70px;
     color: white;
     text-align: center;
-    width: 780px;
-    height: 160px;
+    width: 700px;
+    height: 180px;
     font-size: 24px;
     background-color: rgba(0, 39, 62, .7);  
 }
 .qb-text-02{
     font-size: 36px;
     text-transform: uppercase;
+}
+.qb-text-02:hover{
+    font-weight: bold;
+    
 }
 .footer-01{
     display: flex;
@@ -232,7 +243,7 @@ body{
     text-transform: uppercase;
     padding-top: 80px;
     padding-bottom: 40px;
-    margin-top: 250px;
+    margin-top: 400px;
 }
 .contact-01{
     display: flex;
@@ -240,16 +251,20 @@ body{
     align-items: center;  
     font-weight: 700;
 }
-.contact-01-text{
-    padding: 0 40px;
-    text-transform: uppercase; 
+.contact-01 ul{
+    padding-left: 0;
 }
-.contact-01-divider{
-    margin: 0 20px;
-    width: 3px;
-    height: 25px;
-    background-color: #00273E;
+.contact-01 li{
+    list-style: none;
+    display: inline-block;
+    border-left: 3px solid rgb(0, 39, 62, .5);
+    padding: 0 50px;
+    text-transform: uppercase;
 }
+.contact-01 li:first-child{
+    border-left: none;
+}
+
 .footer{
     display: flex;
     justify-content: center;
