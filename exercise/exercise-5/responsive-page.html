@@ -27,9 +27,51 @@
     gap: 20px;
    
     }
+    #toggle-nav-btn{
+        display: none;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+    #primary-nav{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+    }
+    #primary-nav li{
+        display: inline-block;
+        padding-right: 20px;
+    
+    }
+    .inner{
+        list-style-type: none;
+        
+    }
+  ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 24px;
+        font-weight: bold;
+    }
     
    @media screen and (max-width: 767px) {
+    #primary-nav{
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.5s ease-out;
+        position: absolute;
+        right: 30px;
+    
+        
+    }
+    #primary-nav li a{
+        color: rgb(255, 255, 255);
+    }
+    body.nav-open #primary-nav {
+        grid-template-rows: 1fr;
+    }
     header{
+        padding-top: 20px;
         color: rgb(255, 255, 255);
     }
     .flex{
@@ -38,17 +80,30 @@
         padding: 20px;
     }
     body {
-        background: url(../../images/Fall\ Pattern.jpg) repeat;
+        background: url(../../images/Fall_Pattern.jpg) repeat;
+    }
+    .inner {
+        overflow: hidden;
+    }
+    #toggle-nav-btn{
+        display: block;
     }
 
    }
 
 </style>
 <body>
+    <button id="toggle-nav-btn"></button>
+    <nav id="primary-nav">
+        <ul class="inner">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Seasons</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
     <header>
     <h1>Fall Season</h1>
     </header>
-    
    <div class="flex">
      <div>
      <h2>The Beginning of October</h2>
@@ -63,5 +118,18 @@
      </p>
      </div>
    </div>
+   <script>
+    window.onload = () => {
+        const toggleNavBtn = document.getElementById('toggle-nav-btn');
+        toggleNavBtn.innerHTML = '&#9776;';
+
+    toggleNavBtn.addEventListener('click', () => {
+        document.body.classList.toggle('nav-open');
+        toggleNavBtn.innerHTML = document.body.classList.contains('nav-open')
+        ? '&#x2715'
+        : '&#9776;' ;
+     });
+    };
+   </script>
 </body>
 </html>
