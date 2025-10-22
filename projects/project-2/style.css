@@ -3,6 +3,9 @@ body{
      font-family: "Poppins", sans-serif;
      font-weight: 500;
      font-style: normal;
+     background-image: url(images/background-top.png), url(images/background.jpg);
+     background-position: left bottom;
+     background-size: 100%, auto;
 }
 
 .frame{
@@ -24,9 +27,10 @@ body{
     list-style-type: none;
     text-transform: uppercase;
     margin-right: 60px;
-    padding-top: 30px;
+    padding-top: 22px;
     font-weight: 700;
     color: #1697AE;
+    font-size: 18px;
 }
 .menu-bar li:nth-child(6){
     margin-right: 0px;
@@ -125,6 +129,11 @@ color: #4E2600;
     font-weight: 400;
     color: #4E2600;
 }
+.img-home{
+    width: 650px;
+    height: 520px;
+    background-position: center;
+}
 .pagination{
     display: flex;
     justify-content: center;
@@ -145,6 +154,7 @@ color: #4E2600;
 }
 .pagination a:hover{
     color: #44D3EC;
+    transform: scale(1.05);
 }
 .pagination a:active{
     color: #44D3EC;
