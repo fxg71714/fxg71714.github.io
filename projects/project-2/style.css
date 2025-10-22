@@ -9,6 +9,7 @@ body{
     max-width: 1440px;
     justify-content: center;
     margin: 0 auto;
+   
     
 }
 
@@ -45,14 +46,84 @@ margin: 15px auto;
 
 }
 .body-container{
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    max-width: 1300px;
-    margin-top: 100px;
+    align-items: top;
+    max-width: 1200px;
+    gap: 40px;
+   
 }
 .body-text{
 max-width: 570px;
+color: #4E2600;
+}
+.body-heads{
+    margin: 0 auto;
+    display: flex;  
+    align-items: end;
+    margin-top: 100px;
+    color: #4E2600;
+    max-width: 1200px;
+}
+.title{
+    font-size: 36px;
+    font-weight: 800;
+    margin-left: 0px;
+}
+.share-logo-box{
+    display: flex;
+    margin-left: auto;
+}
+.share-logo{
+   margin-left: 10px;
+    width: 25px;
+}
+.publishby{
+    margin-top: -5px;
+    font-weight: 300;
+    font-size: 16px;
+}
+.intro{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.body-line{
+    margin: 30px auto;
+    max-width: 570px;
+   border: 2px solid #E05E21;
+}
+.body-line-02{
+    margin: 0 auto;
+    max-width: 650px;
+   border: 2px solid #E05E21;
+}
+.ingredients{
+    margin-top: -20px;
+    font-size: 26px;
+    font-weight: 700;
+}
+.list{
+    margin-top: -15px;
+    margin-left: -20px;
+    font-weight: 400;
+}
+.cooking-time{
+    display: flex;
+   justify-content: center;
+    color: #E05E21;
+}
+.cooking-time-box{
+    margin-right: 60px;
+}
+.cooking-time-head{
+    font-weight: 600;
+}
+.cooking-time-time{
+    margin-top: -15px;
+    font-weight: 400;
+    color: #4E2600;
 }
 .pagination{
     display: flex;
@@ -61,11 +132,29 @@ max-width: 570px;
     color: #1697AE;
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 22px;
+    margin-top: 30px;
 }
 .pagination a {
     padding-left: 10px;
     text-decoration: none;
 }
+
 .pagination a:visited{
     color: #1697AE;
+}
+.pagination a:hover{
+    color: #44D3EC;
+}
+.pagination a:active{
+    color: #44D3EC;
+}
+footer{
+    margin: 0 auto;
+    max-width: 1390px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #E05E21;
+    margin-top: 120px;
+    margin-bottom: 80px;
 }
