@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Krona+One&display=swap" rel="stylesheet">
+    <title>Home Page | Brews & Bonds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="frame">
+<button id="toggle-nav-btn"></button>
+    <nav id="primary-nav">
+        <div class="inner">
+            <ul>
+                <li><a href="menu.html">menu</a></li>
+                <li><a href="events.html">events</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
+    </nav>  
+    <div class="menu-list">
+            <div><img src="Images/Logo_White.png" alt="Brews and Bonds Logo"></div>
+            <div >.</div>
+            <div>(000) 000-0000</div>
+            <div>.</div>
+            <div> Harrisburg, PA</div>
+        </div>
+  </div>
+  <div class="header-background-img"> 
+    <img src="Images/background-img.jpg" alt="">
+  </div>
+    <div class="hero-vector">
+      <div>
+        <img src="Images/Hero-vector-03.png" alt="">
+      </div>
+      <div>
+        <img src="Images/Hero-vector-02.png" alt="">
+      </div>
+      <div>
+        <img src="Images/Hero-vector.png" alt="">
+      </div>
+    </div>
+      <div class="hero-text">
+        <h1>BREWS & BONDS</h1>
+        <h2>The Power of Love, Passion, and A Good Cup of Coffee.</h2>
+        <button class="hero-menu-btn"><a href="ourstory.html">Our Story</a></button>
+      </div>
+
+      <div class="home-card-01">
+        <div class="home-card-01-text">
+          <div>Coming Soon</div>
+          <div>FALL DRINKS</div>
+          <div>Celebrate the season with our new limited-time drink collection, inspired by cozy flavors and crafted for moments of comfort and joy. Each sip captures the warmth and spirit of the season, making it the perfect companion for crisp mornings or relaxed afternoons.</div>
+          <button class="Menu-btn"> <a href="menu.html">Menu</a></button>
+        </div>
+        <div class="home-card-01-img"><img src="Images/Home Page_AD_01.jpg" alt=""></div>
+      </div>
+
+      <div class="home-card-01">
+        <div class="home-card-02-img"><img src="Images/card-02-img.png" alt=""></div>
+        <div class="home-card-02-text">
+          <div>MORNING YOGA? <br>
+            COOKING CLASS? <br>
+            LIVE JAZZ BAND?</div>
+          <div>Check out our weekly event schedule! From live music and creative workshops to trivia nights and weekend brunches, you might find the right activities for you and your favorite people.</div>
+          <button class="events-btn"> <a href="events.html">Events</a></button>
+        </div>
+      </div>
+      
+    <script>
+    // Perform this after the window has loaded
+    window.onload = () => {
+      // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+      const toggleNavBtn = document.getElementById('toggle-nav-btn');
+      toggleNavBtn.innerHTML = '&#9776;';
+
+      // Tell button to do something on click
+      toggleNavBtn.addEventListener('click', () => {
+        // toggle the body's class attribute
+        document.body.classList.toggle('nav-open');
+        toggleNavBtn.innerHTML = document.body.classList.contains('nav-open')
+          ? '&#x2715'
+          : '&#9776;';
+      });
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+body{
+    margin: 0;
+    font-family: 'Alexandria', sans-serif;
+}
+.frame{
+    max-width: 1440px;
+    margin: 0 auto;
+    z-index: 2;
+    color: white;
+}
+#primary-nav {
+    text-align: right;
+    margin-right: 50px;
+    z-index: 1;
+}
+#primary-nav li{
+    display: inline-block;
+     margin-top: 100px;
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-right: 30px;
+      font-weight: 900;
+}
+#primary-nav li a{
+        text-decoration: none;
+        color: white;
+    }
+
+
+
+#toggle-nav-btn {
+    display: none;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+  }
+
+.menu-list{
+    display: flex;
+    margin-top: -35px;
+    margin-right: 350px;
+    margin-left: 50px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.menu-list div{
+ margin-right: 20px;
+}
+.menu-list div:first-child{
+  margin-top: -50px;
+  width: 105px;
+  height: 105px;
+}
+.menu-list div:first-child img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.header-background-img{
+  margin-top: -180px;
+    max-width: 100%;
+    height: 700px;
+}
+.header-background-img img{
+    width: 100%;
+    height: 700px;
+    object-fit: none;
+    object-position: 0 -1000px;
+    position: relative;
+     z-index: -2
+}
+
+.hero-vector{
+    transform: scale(1.5);
+}
+.hero-vector div:first-child{
+    margin-top: -215px;
+}
+.hero-vector div:nth-child(2){
+    margin-top: -210px;
+}
+.hero-vector div:nth-child(3){
+    margin-top: -233px;
+}
+.hero-text{
+  margin-top: -550px;
+  margin-bottom: 250px;
+  margin-left: 180px;
+  color: white;
+  position: relative;
+  z-index: 3;
+}
+.hero-text h1{
+  font-size: 64px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.hero-text h2{
+  font-family: Krona One, sans-serif;
+  width: 670px;
+  font-size: 32px;
+}
+.hero-menu-btn a{
+  text-decoration: none;
+  color: #5B0002;
+}
+.hero-menu-btn a:visited{
+  text-decoration: none;
+  color: #5B0002;
+}
+.hero-menu-btn{
+  width: 190px;
+  height: 52px;
+  border: none;
+   border-radius: 10px;
+  font-family: 'Krona One', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.home-card-01{
+  max-width: 1180px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+}
+.home-card-01-text{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.home-card-01-text div:nth-child(1){
+  font-size: 36px;
+  font-weight: 400;
+  color: #5B0002;
+  opacity: .6;
+}
+.home-card-01-text div:nth-child(2){
+  font-family: 'Krona One', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #5B0002;
+  margin-bottom: 30px;
+}
+.home-card-01-text div:nth-child(3){
+  font-size: 20px;
+  font-weight: 400;
+  color: #505050;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  text-align: center;
+}
+.home-card-01-text .Menu-btn a{
+  text-decoration: none;
+  color: #AD7659;
+}
+.home-card-01-text .Menu-btn a:visited{
+  text-decoration: none;
+  color: #AD7659;
+}
+.home-card-01-text .Menu-btn{
+  width: 190px;
+  height: 52px;
+  background-color: white;
+  border: 5px solid #AD7659;
+  border-radius: 10px;
+  font-family: 'Krona One', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.home-card-02-text div:nth-child(1){
+  font-size: 36px;
+  font-weight: 400;
+  color: #5B0002;
+  opacity: .6;
+}
+.home-card-02-text div:nth-child(2){
+  font-size: 20px;
+  font-weight: 400;
+  color: #505050;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  text-align: center;
+
+}
+
+ @media (max-width: 920px){
+  .menu-list div:nth-child(2),
+  .menu-list div:nth-child(3), 
+  .menu-list div:nth-child(4),
+  .menu-list div:nth-child(5){
+    display: none;
+
+  }
+ }
+  @media (max-width: 767px) {
+    .menu-list div:first-child{
+    margin-top: 105px;
+    }
+
+      #primary-nav {
+      display: grid;
+      justify-content: center;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.5s ease-out;
+    }
+    #primary-nav li {
+      display: inline-block;
+      margin-top: 120px;
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-right: 30px;
+      font-weight: 900;
+    }
+    #primary-nav li a{
+        text-decoration: none;
+        color: white;
+    }
+    body.nav-open #primary-nav {
+      grid-template-rows: 1fr;
+    }
+    .inner {
+      overflow: hidden;
+    }
+    #toggle-nav-btn {
+      display: block; 
+      background: transparent;
+      border: 0;
+      font-size: 45px;
+      margin-top: 40px;
+      color: white;
+    }
+}
