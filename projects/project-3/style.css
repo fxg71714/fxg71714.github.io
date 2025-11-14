@@ -74,6 +74,26 @@ body{
   position: relative;
 
 }
+.header-background-img-03{
+ background-image: url(Images/background-img.jpg);
+ width: 100%;
+ height: 2150px;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+.header-background-img-04{
+ background-image: url(Images/background-img.jpg);
+ width: 100%;
+ height: 760px;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
 
 .hero-text{
   margin-top: 120px;
@@ -163,17 +183,20 @@ body{
   text-align: center;
 }
 .Menu-btn a,
-.events-btn a{
+.events-btn a,
+.submit-btn a{
   text-decoration: none;
   color: #AD7659;
 }
 .Menu-btn a:visited,
-.events-btn a:visited{
+.events-btn a:visited,
+.submit-btn a:visited{
   text-decoration: none;
   color: #AD7659;
 }
 .Menu-btn,
-.events-btn{
+.events-btn,
+.submit-btn{
   width: 190px;
   height: 52px;
   background-color: white;
@@ -184,6 +207,7 @@ body{
   font-weight: 600;
   cursor: pointer;
 }
+
 .home-card-02-text div:first-child{
   font-size: 40px;
   font-weight: 900;
@@ -202,17 +226,24 @@ body{
 }
 
 /* Menu Page */
-.menu-titles{
+
+.menu-titles,
+.events-titles,
+.ourstory-titles{
   margin-left: 120px;
   padding-top: 30px;
 }
-.menu-titles h1{
+.menu-titles h1,
+.events-titles h1,
+.ourstory-titles h1{
   font-family: Krona One, sans-serif;
   font-size: 36px;
   color: #5B0002;
 }
 .menu-titles h2,
-.menu-end-title{
+.menu-end-title,
+.events-titles h2,
+.ourstory-titles h2{
 font-family: Krona One, sans-serif;
   font-size: 24px;
   font-weight: 100;
@@ -289,16 +320,61 @@ padding-bottom: 100px;
   margin: 0 auto;
   gap: 80px;
 }
-.footer-background-img{
- background-image: url(Images/footer-background-img.jpg);
- width: 100%;
- height: 350px;
-   background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin-top: 200px;
 
+/*events*/
+.events-container,
+.ourstory-container{
+  background-color: white;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.events-days{
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+padding: 50px;
+padding-top: 0px;
+}
+.day{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+.time{
+  text-align: right;
+  font-weight: 700;
+  color: #AD7659;
+  margin-top: 5px;
+}
+.description{
+  margin-top: 5px;
+}
+.notice{
+  max-width: 800px;
+  text-align: center;
+  color: #5B0002;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+/*Our Story*/
+.ourstory-body{
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+}
+.ourstory-img{
+  
+  padding-bottom: 80px;
+}
+.ourstory-body div{
+  max-width: 630px;
+}
+.connect-form{
+  color: #5B0002;
 }
 .footer-background-img-menu{
  background-image: url(Images/footer-background-img.jpg);
@@ -308,6 +384,30 @@ padding-bottom: 100px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  bottom: 0;
+
+}
+.footer-background-img-events{
+ background-image: url(Images/footer-background-img.jpg);
+ width: 100%;
+ height: 350px;
+   background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  bottom: 0;
+
+}
+.footer-background-img-ourstory,
+.footer-background-img-contact{
+ background-image: url(Images/footer-background-img.jpg);
+ width: 100%;
+ height: 350px;
+   background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  bottom: 0;
 
 }
 .footer-frame{
@@ -324,6 +424,27 @@ padding-bottom: 100px;
   color: white;
   display: flex;
   font-size: 20px;
+}
+.footer-frame-events{
+  margin: 0 auto;
+  max-width: 1440px;
+  color: white;
+  display: flex;
+  font-size: 20px;
+}
+.footer-frame-ourstory,
+.footer-frame-contact{
+  margin: 0 auto;
+  max-width: 1440px;
+  color: white;
+  display: flex;
+  font-size: 20px;
+}
+.connect-form{
+  padding: 50px;
+ 
+ max-width: 1000px;
+ margin: 0 auto;
 }
 .footer-logo img{
   width: 105px;
@@ -409,7 +530,11 @@ padding-bottom: 100px;
     flex-direction: column;
     align-items: center;
   }
-   .footer-background-img{
+   .footer-background-img,
+   .footer-background-img-menu,
+   .footer-background-img-events,
+   .footer-background-img-ourstory,
+   .footer-background-img-contact{
     background-image: url(Images/footer-background-img-02.jpg);
  width: 100%;
  height: 700px;
@@ -420,7 +545,12 @@ padding-bottom: 100px;
   max-width: 1200px;
 margin: 0 auto;
   }
-  .footer-frame{
+
+  .footer-frame,
+  .footer-frame-menu,
+  .footer-frame-events,
+  .footer-frame-ourstory,
+  .footer-frame-contact{
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -433,6 +563,12 @@ margin: 0 auto;
   }
   .footer-copyright{
     margin-left: 90px;
+  }
+    .footer-background-img-menu{
+    margin-top: 600px;
+  }
+   .footer-background-img-ourstory{
+    margin-top: 500px;
   }
   .menu-end-inside-01{
     flex-direction: column;
@@ -448,7 +584,19 @@ margin: 0 auto;
     max-width: 550px;
     margin: 0 auto;
   }
+  .ourstory-body{
+  flex-direction: column-reverse;
+  margin-left: 120px;
  }
+ .ourstory-img{
+  padding-bottom: 0px;
+  margin-top: 30px;
+ }
+ .ourstory-body div:first-child{
+  margin-top: -40px;
+ }
+ }
+ 
 
  @media (max-width: 970px){
   .menu-list div:nth-child(2),
@@ -456,6 +604,9 @@ margin: 0 auto;
   .menu-list div:nth-child(4),
   .menu-list div:nth-child(5){
     display: none;
+  }
+  .footer-background-img-menu{
+    margin-top: 1000px;
   }
  
  }
@@ -511,6 +662,15 @@ margin: 0 auto;
   .hero-vector{
     margin-top: -180px;
     transform: scale(.65);
+  }
+   .footer-background-img-events{
+    margin-top: 300px;
+  }
+  .footer-background-img-menu{
+    margin-top: 1750px;
+  }
+   .footer-background-img-contact{
+    margin-top: 200px;
   }
   .footer-row-1-2{
     flex-direction: column;

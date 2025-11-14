@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Krona+One&display=swap" rel="stylesheet">
+    <title>Our Story | Brews & Bonds</title>
+    <link rel="icon" type="image/x-icon" href="images/Logo_White.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header-background-img-04"> 
+    <div class="frame">
+      <div class="menu-list">
+            <a href="index.html" class="menu-list-logo"><img src="Images/Logo_White.png" alt="Brews and Bonds Logo"></a>
+            <div >.</div>
+            <div>(000) 000-0000</div>
+            <div>.</div>
+            <div> Harrisburg, PA</div>
+        </div>
+    <button id="toggle-nav-btn"></button>
+    <nav id="primary-nav">
+        <div class="inner">
+            <ul>
+                <li><a href="menu.html">menu</a></li>
+                <li><a href="events.html">events</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
+    </nav>  
+    </div>
+    <div class="ourstory-container">
+        <div class="ourstory-titles">
+            <h1>OUR STORY</h1>
+            <h2>JACOB & EMILY</h2>
+        </div>
+        <div class="ourstory-body">
+            <div>Once upon a time in San Francisco, Jacob and Emily discovered a shared passion for coffee. Their love for the rich aromas, intricate flavors, and sense of community sparked not only friendship but a blossoming romance. They spent countless hours exploring the city’s coffee scene, dreaming of one day opening their own shop. <br><br>
+            Life led them to the charming city of Harrisburg, Pennsylvania, where they saw the perfect place to bring their dream to life. Inspired by their experiences, they created Brews & Bonds, a coffee shop that blends the warmth of community with the rich flavors they cherished, using locally sourced beans to craft every cup. From the first day, the aroma of freshly brewed coffee drew locals and travelers alike. The cozy, San Francisco–inspired interior became a welcoming space where friendships flourished. Jacob and Emily poured their hearts into every cup, building relationships and making everyone feel like family. <br><br> 
+
+            Today, Brews & Bonds stands as a testament to love, passion, and great coffee. Their journey reminds us that the perfect blend of dedication and heart can create something truly extraordinary.</div>
+            <div class="ourstory-img"><img src="Images/ourwhisky-foundation-7Jyyf4haqww-unsplash.jpg" alt="Jacob and Emily"></div>
+        </div>
+    </div>
+    </div>
+      <footer class="footer-background-img-ourstory">
+        <div class="footer-frame-ourstory">
+          <div class="footer-row-1-2">
+          <div class="footer-row-00">
+         <div class="footer-row-01">
+          <a href="index.html" class="footer-logo"><img src="Images/Logo_White.png" alt="Brews and Bonds White Logo"></a>
+          <div>BREWS & BONDS</div>
+        </div>
+         <div class="footer-slogan">
+          The Power of Love, Passion, and A Good Cup of Coffee.
+        </div>
+      </div>
+        <div class="footer-row-02">
+          <div>Hours: <br><br> Monday - Saturday <br> 7:00AM - 10:00PM</div>
+          <div>Sunday <br> 7:00AM - 3:00PM</div>
+        </div>
+          </div>
+          
+        <div class="footer-row-3-4">
+          <div class="footer-row-03">
+          <ul>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="footer-row-04">
+          <div>1 HACC Dr</div>
+          <div>Harrisburg, PA 17110</div>
+          <div>(000) 000-0000</div>
+        </div>
+      </div>
+        </div>
+        
+        <div class="footer-copyright">Copyright ©2025 Brews and Bonds. All Rights Reserved.</div>
+      </footer> 
+     <script>
+    // Perform this after the window has loaded
+    window.onload = () => {
+      // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+      const toggleNavBtn = document.getElementById('toggle-nav-btn');
+      toggleNavBtn.innerHTML = '&#9776;';
+
+      // Tell button to do something on click
+      toggleNavBtn.addEventListener('click', () => {
+        // toggle the body's class attribute
+        document.body.classList.toggle('nav-open');
+        toggleNavBtn.innerHTML = document.body.classList.contains('nav-open')
+          ? '&#x2715'
+          : '&#9776;';
+      });
+    };
+  </script>
+    </body>
+    </html>
