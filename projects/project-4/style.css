@@ -1,0 +1,811 @@
+
+body{
+    margin: 0;
+    font-family: "Albert Sans", sans-serif;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 80px;
+}
+.menu-list ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+.menu-list li{
+    display: flex;
+        flex-direction: column;
+        height: 100px;
+   
+}
+.menu-list li a{
+    display: flex;
+    text-decoration: none;
+     padding: 10px;
+    color: #033373;
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-right: auto;
+    margin-top: 40px;
+    
+}
+#get-tickets {
+        padding: 20px;
+        padding-top: 50px; /* sets vertical positioning */
+        padding-bottom: 25px;
+        margin-top: 0;
+        height: 100%;
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+
+.logo img{
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+footer{
+
+  left: 0;
+  bottom: 0;
+  height: 900px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin-top: 80px;
+}
+.newsletter-section{
+    height: 200px;
+  width: 100%;
+  background-color: #F2B036;
+}
+.newsletter{
+    width: 600px;
+    color: #033373;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.newsletter-title{
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+.block{
+    display: flex;
+}
+.newsletter-block{
+    width: 430px;
+    height: 60px;
+    background-color: white;
+}
+.signup-block{
+    width: 160px;
+    height: 40px;
+    background-color: #033373;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+}
+.footer-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 80px;
+}
+.footer-second-section{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.footer-third-section{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+   padding: 80px;
+    justify-content: space-between;
+}
+.footer-name-slogan,
+.hours,
+.contact{
+    display: flex;
+}
+.hours{
+    margin-top: 40px;
+}
+.contact{
+    margin-top: 40px;
+    margin-left: auto;
+}
+.footer-name,
+.hours-name,
+.contact-name{
+    font-size: 20px;
+    font-weight: 900;
+    width: 180px;
+    padding-left: 10px;
+}
+.hours-name,
+.contact-name{
+    text-align: right;
+    width: 140px;
+    padding-right: 40px;
+}
+.footer-slogan,
+.hours-time{
+    width: 300px;
+    font-size: 18px;
+}
+.contact-time{
+    width: 600px;
+    font-size: 18px;
+}
+.social-media{
+    display: flex;
+    margin-left: auto;
+}
+.x-logo img{
+    width: 40px;
+    margin-left: 10px;
+}
+.instagram-logo img{
+    width: 40px;
+}
+#toggle-nav-btn {
+    display: none;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+  }
+
+.frame{
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+.visit-hero{
+    display: flex;
+}
+.visit-hero-img{
+     background-image: url(Images/mitya-ivanov-kdt2wQ8z5iA-unsplash.jpg);
+ width: 720px;
+ height: 600px;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 800px;
+}
+.hours-container{
+    margin-top: auto;
+    padding: 80px;
+    font-weight: 700;
+    font-size: 20px;
+   line-height: 1.5;
+}
+.hours-container div:first-child{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.admission-location-container-bg{
+    background-color: black;
+    width: 100%;
+}
+.admission-location-container{
+    display: flex;
+    color: white;
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.al-inner-container{
+    display: flex;
+    padding: 60px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.al-name{
+    font-size: 36px;
+    font-weight: 700;
+    width: 300px;
+
+}
+.amenities-container{
+    display: flex;
+}
+.amenities-name{
+    font-size: 36px;
+    font-weight: 700;
+    padding: 80px;
+}
+.cafe{
+      background-image: url(Images/Cafe-Sculpture-Garden.jpg);
+ width: 400px;
+ height: 80px;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+font-size: 24px;
+color: white;
+text-align: center;
+padding-top: 320px;
+}
+.gift-shop{
+      background-image: url(Images/gift-shop.jpg);
+ width: 400px;
+ height: 80px;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+font-size: 24px;
+color: white;
+text-align: center;
+padding-top: 320px;
+}
+.accessibility{
+      background-image: url(Images/Accessible-facilities.jpg);
+  width: 400px;
+ height: 80px;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+font-size: 24px;
+color: white;
+text-align: center;
+padding-top: 320px;
+}
+.current-exhibitions-name,
+.upcoming-highlights-name,
+.past-highlights-name{
+    max-width: 100px;
+    margin-top: 80px;
+    padding-left: 20px;
+    font-size: 36px;
+}
+.oct-highlights,
+.dec-highlights{
+background-image: url(Images/oct-10.jpg);
+  max-width: 1400px;
+ height: 220px;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+color: white;
+padding-left: 40px;
+padding-top: 80px;
+text-shadow: 2px 2px 4px #000000;
+}
+.dec-highlights{
+    background-image: url(Images/dec-01.jpg);
+}
+
+.oct-highlights div:nth-child(1){
+font-size: 36px;
+font-weight: 900;
+}
+.dec-highlights div:nth-child(1){
+font-size: 36px;
+font-weight: 900;
+}
+.oct-highlights div:nth-child(2){
+    width: 600px;
+    margin-top: 40px;
+}
+.dec-highlights div:nth-child(2){
+    width: 600px;
+    margin-top: 40px;
+}
+.current-exhibitions-box-01,
+.current-exhibitions-box-02{
+    display: flex;
+}
+
+.past-highlights{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.spring{
+    width: 720px;
+    height: 180px;
+    background-color: #F2B036;
+    font-size: 30px;
+  font-weight: 500;
+color: white;
+padding-left: 40px;
+padding-top: 120px;
+line-height: 2;
+}
+.fall{
+    width: 720px;
+    height: 180px;
+    background-color: #F32612;
+    font-size: 30px;
+  font-weight: 500;
+color: white;
+padding-left: 40px;
+padding-top: 120px;
+line-height: 2;
+}
+
+.elenamarquez{
+background-image: url(Images/elena-marquez.jpg);
+  width: 640px;
+ height: 100px;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+color: white;
+text-shadow: 2px 2px 4px #000000;
+padding-left: 80px;
+padding-top: 430px;
+}
+.devonchen{
+background-image: url(Images/devon-chen.jpg);
+  width: 640px;
+ height: 100px;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+color: white;
+text-shadow: 2px 2px 4px #000000;
+padding-left: 80px;
+padding-top: 430px;
+}
+.ayakowatanabe{
+background-image: url(Images/ayako-watanabe.jpg);
+  width: 640px;
+ height: 100px;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+color: white;
+text-shadow: 2px 2px 4px #000000;
+padding-left: 80px;
+padding-top: 430px;
+}
+.marcushall{
+background-image: url(Images/marcus-hall.jpg);
+  width: 640px;
+ height: 100px;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+color: white;
+text-shadow: 2px 2px 4px #000000;
+padding-top: 430px;
+padding-left: 80px;
+}
+.calebnguyen{
+background-image: url(Images/caleb-nguyen.jpg);
+  width: 640px;
+ height: 100px;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+color: white;
+text-shadow: 2px 2px 4px #000000;
+padding-top: 430px;
+padding-left: 80px;
+}
+.sofiaramirez{
+background-image: url(Images/sophia-ramirez.jpg);
+  width: 640px;
+ height: 100px;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+color: white;
+text-shadow: 2px 2px 4px #000000;
+padding-top: 430px;
+padding-left: 80px;
+}
+.first-fridays,
+.artist-talks,
+.family-sundays,
+.film-nights{
+background-image: url(Images/first-fridays.jpg);
+  width: 680px;
+ height: 170px;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+color: white;
+padding-top: 280px;
+padding-left: 50px;
+line-height: 2;
+}
+
+.midnight-river-img,
+.ceremonial-vessel-img,
+.cityscape-in-motion-img,
+.aurora-rising-img,
+.threads-of-silence-img,
+.self-portrait-img,
+.digital-landscape-img,
+.about-img{
+background-image: url(Images/midnight-river.jpg);
+  width: 720px;
+ height: 600px;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.ceremonial-vessel-img{
+    background-image: url(Images/ceremonial-vessel.jpg);
+}
+.cityscape-in-motion-img{
+    background-image: url(Images/cityscape-in-motion.jpg);
+}
+.aurora-rising-img{
+    background-image: url(Images/aurora-rising.jpg);
+}
+.threads-of-silence-img{
+    background-image: url(Images/threads-of-silence.jpg);
+}
+.self-portrait-img{
+    background-image: url(Images/self-portrait.jpg);
+}
+.digital-landscape-img{
+    background-image: url(Images/digital-landscape.jpg);
+}
+.about-img{
+    background-image: url(Images/about.jpg);
+}
+.about-h1{
+    margin-top: 180px;
+}
+.collection-text{
+    width: 560px;
+    padding: 80px;
+}
+.collection-h2{
+    font-size: 36px;
+    font-style: italic;
+}
+.collection-h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: -30px;
+}
+.collection-description{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.collection-painter{
+    margin-top: 80px;
+    font-size: 32px;
+    font-weight: 700;
+}
+.collection-date{
+    font-size: 20px;
+    font-weight: 700;
+}
+.artist-talks{
+    background-image: url(Images/artist-talks.jpg);
+}
+.family-sundays{
+    background-image: url(Images/family-sundays.jpg);
+}
+.film-nights{
+    background-image: url(Images/film-nights.jpg);
+}
+.first-fridays div:nth-child(1),
+.artist-talks div:nth-child(1),
+.family-sundays div:nth-child(1),
+.film-nights div:nth-child(1){
+    font-size: 30px;
+}
+
+.localvisions{
+   width: 620px;
+    padding: 80px; 
+}
+.lightandshadow{
+    width: 560px;
+    padding: 80px;
+    
+}
+.lightandshadow-h2{
+ font-size: 36px;
+ font-weight: 500;
+ font-style: italic;
+}
+.lightandshadow-h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+.starring-artists{
+    display: flex;
+   margin-top: 80px;
+   padding-bottom: -80px;
+   overflow: hidden;
+}
+.starring-artists div:nth-child(1){
+    font-size: 24px;
+ font-weight: 500;
+ font-style: italic;
+ width: 200px;
+}
+.starring-artists div:nth-child(2){
+font-size: 20px;
+font-weight: 500;
+line-height: 1.5;
+}
+.events-01,
+.events-02{
+display: flex;
+}
+.events-container{
+    margin-top: 100px;
+}
+.art-education-container-yellow{
+background-color: #F2B036;
+}
+.art-education-container-red{
+background-color: #F32612;
+}
+.art-education-container-blue{
+background-color: #033373;
+}
+.art-education-container-purple{
+background-color: #8D5EF2;
+}
+.art-education-container{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    color: white;
+    justify-content: space-between;
+}
+.art-education-container div:nth-child(1){
+    font-size: 36px;
+    font-weight: 700;
+    width: 200px;
+    padding: 80px;
+}
+.art-education-container div:nth-child(2){
+font-size: 24px;
+    font-weight: 500;
+    width: 800px;
+    padding: 80px;
+}
+.about-text-container-black{
+    background-color: black;
+}
+.about-text-container{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    color: white;
+    justify-content: space-between;
+}
+.about-text-container div:nth-child(1){
+    font-size: 36px;
+    font-weight: 700;
+    width: 200px;
+    padding: 80px;
+}
+.about-text-container div:nth-child(2){
+font-size: 20px;
+    width: 800px;
+    padding: 80px;
+}
+
+.about-text-black-container{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.about-text-black-container div:nth-child(2){
+    font-size: 36px;
+    font-weight: 700;
+    width: 250px;
+    padding: 80px;
+}
+.about-text-black-container div:nth-child(1){
+font-size: 20px;
+    width: 800px;
+    padding: 80px;
+}
+
+.art-education-h1{
+    margin-top: 80px;
+    margin-left: 80px;
+}
+.art-education-h2{
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 50PX;
+    margin-left: 80px;
+}
+.about-container{
+    display: flex;
+    margin-top: 80px;
+}
+.current-exhibitions-single-container{
+    position: relative;
+  width: 50%;
+    width: 720px;
+    height: 530px;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 1); /* Black see-through */
+  color: #f1f1f1;
+  width: 560px;
+  height: 530px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.overlay div:nth-child(1){
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 120px;
+}
+.overlay div:nth-child(3){
+    margin-top: 30px;
+}
+.current-exhibitions-single-container:hover .overlay {
+  opacity: 1;
+}
+.events-name,
+.events-h2{
+    padding-left: 20px;
+}
+
+  @media (max-width: 1030px) {
+    .menu-list {
+      display: grid;
+       flex-direction: row;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.5s ease-out;
+    }
+    .menu-list li {
+      display: inline-block;
+    }
+    body.nav-open .menu-list {
+      grid-template-rows: 1fr;
+    }
+    .inner {
+        overflow: hidden;
+    }
+    #toggle-nav-btn {
+        display: block;
+    }
+    .footer{
+        height: 1000px;
+    }
+    .footer-second-section{
+        flex-direction: column;
+    }
+    .footer-third-section{
+        margin-top: -50px;
+    }
+    .visit-hero{
+        flex-direction: column;
+       justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+    .hours-container{
+        width: 500px;
+    }
+    .admission-location-container{
+        flex-direction: column;
+         justify-content: center;
+        align-items: center;
+         padding-bottom: 10px;
+    }
+    .al-inner-container{
+        width: 500px;
+    }
+    .amenities-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .amenities-name{
+        width: 500px;
+    }
+    .cafe,
+    .gift-shop,
+    .accessibility{
+    width: 720px;
+    }
+    .current-exhibitions-box-01{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .current-exhibitions-box-02{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .events-01,
+    .events-02,
+    .past-highlights{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .art-education-container{
+        flex-direction: column;
+    }
+    .art-education-container div:nth-child(2){
+        margin-top: -100px;
+    }
+    .about-container{
+        flex-direction: column-reverse;
+         justify-content: center;
+        align-items: center;
+    }
+    .collection-text{
+        margin-top: -200px;
+    }
+    .about-text-container{
+        flex-direction: column;
+        max-width: 720px;
+    }
+    
+     .about-text-container div:nth-child(2){
+         max-width: 550px;
+         margin-top: -100px;
+    }
+    .about-text-black-container{
+        flex-direction: column-reverse;
+        max-width: 720px;
+    }
+    .about-text-black-container div:nth-child(1){
+         max-width: 550px;
+         margin-top: -100px;
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Our Museum! Aurora Art Museum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Images/AAM_Logo_Black.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="toggle-nav-btn"></button>
+    <div class="menu">
+        <div class="logo"><a href="index.html"><img src="Images/AAM_Logo_Black.svg" alt="Aurora Art Black Logo"></a></div>
+       <nav class="menu-list">
+        <div class="inner">
+        <ul>    
+             <li><a href="visit.html">visit</a></li>
+            <li><a href="events.html">events</a></li>
+            <li><a href="collections.html">collections</a></li>
+            <li><a href="education.html">education</a></li>
+            <li><a href="support.html">support</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a id="get-tickets" href="visit.html">get <br> tickets</a></li>
+            <li><a href="support.html">membership</a></li>
+        </ul>
+        </div>
+    </nav> 
+    </div>
+    <div class="frame">
+            <h1 class="art-education-h1">ART EDUCATION</h1>
+            <h2 class="art-education-h2">We believe art education inspires lifelong curiosity.</h2>
+    </div>
+    <div class="art-education-container-yellow">
+        <div class="art-education-container">
+         <div>FOR SCHOOLS</div>
+        <div>• Guided field trips with hands-on activities <br><br>
+        • Teacher resources and lesson plans</div>   
+        </div>
+         <div class="art-education-container-red">
+        <div class="art-education-container">
+         <div>FOR ADULTS</div>
+        <div>• Studio workshops with practicing artists <br><br>
+       • Lecture series exploring art history and current trends</div>   
+        </div>
+        </div>
+
+         <div class="art-education-container-blue">
+        <div class="art-education-container">
+         <div>FOR FAMILIES</div>
+        <div>• Drop-in art making in the Creativity Lab<br><br>
+    • Seasonal family festivals</div>   
+        </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="newsletter-section">
+            <div class="newsletter">
+            <div class="newsletter-title">Newsletter</div>
+            <div class="block">
+                <div class="newsletter-block"></div>
+                <div class="signup-block"> SIGN UP</div>
+            </div>
+             </div>
+        </div>
+
+        <div class="footer-section">
+            <div class="logo"><a href="index.html"><img src="Images/AAM_Logo_White.svg" alt="Aurora Art Black Logo"></a></div>
+            <div class="footer-name-slogan">
+                <div class="footer-name">AURORA ART MUSEUM</div>
+                <div class="footer-slogan">We believe art has the power to illuminate, challenge, and inspire. </div>
+            </div>
+            <div class="footer-second-section">
+            <div class="hours">
+                <div class="hours-name">HOURS</div>
+                <div class="hours-time">Tuesday – Friday: 10am – 6pm <br>
+                Saturday: 10am – 8pm <br>
+                Sunday: 12pm – 5pm <br>
+                <i>Closed Mondays & Major Holidays</i></div>
+            </div>
+             <div class="contact">
+                <div class="contact-name">CONTACT</div>
+                <div class="contact-time">123 Main Street
+                Harrisburg, PA 17110 <br><br>info@auroraartmuseum.test</div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="footer-third-section">
+            <div>© 2025 Aurora Art Museum. All Rights Reserved.</div>
+            <div class="social-media">
+                <div class="instagram-logo"><img src="Images/Instagram_Glyph_White.svg" alt="Instagram Logo"></div>
+                <div class="x-logo"><img src="Images/logo.svg" alt="X Logo"></div>
+            </div>
+        </div>
+    </footer>
+    <script>
+    // Perform this after the window has loaded
+    window.onload = () => {
+      // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+      const toggleNavBtn = document.getElementById('toggle-nav-btn');
+      toggleNavBtn.innerHTML = '&#9776;';
+
+      // Tell button to do something on click
+      toggleNavBtn.addEventListener('click', () => {
+        // toggle the body's class attribute
+        document.body.classList.toggle('nav-open');
+        toggleNavBtn.innerHTML = document.body.classList.contains('nav-open')
+          ? '&#x2715'
+          : '&#9776;';
+      });
+    };
+  </script>
+</body>
+</html> 

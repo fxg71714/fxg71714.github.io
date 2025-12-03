@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .menu-list {
+        background-color: lightblue;
+      }
+      .menu-list ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .menu-list li {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        background-color: gray;
+      }
+      .menu-list li a {
+        display: flex;
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+        margin-top: 40px; /* sets vertical positioning */
+      }
+      .menu-list li a:hover,
+      a#get-tickets:hover {
+        background-color: orange;
+      }
+
+      #get-tickets {
+        padding-top: 70px; /* sets vertical positioning */
+        margin-top: 0;
+        height: 100%;
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <nav class="menu-list">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a id="get-tickets" href="tickets.html">Tickets</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

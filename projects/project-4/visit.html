@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Our Museum! Aurora Art Museum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Images/AAM_Logo_Black.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="toggle-nav-btn"></button>
+    <div class="menu">
+        <div class="logo"><a href="index.html"><img src="Images/AAM_Logo_Black.svg" alt="Aurora Art Black Logo"></a></div>
+       <nav class="menu-list">
+        <div class="inner">
+        <ul>    
+            <li><a href="#">visit</a></li>
+            <li><a href="events.html">events</a></li>
+            <li><a href="collections.html">collections</a></li>
+            <li><a href="education.html">education</a></li>
+            <li><a href="support.html">support</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a id="get-tickets" href="visit.html">get <br> tickets</a></li>
+            <li><a href="support.html">membership</a></li>
+        </ul>
+        </div>
+        </nav> 
+        </div>
+        
+        <div class="frame"> 
+           <div class="visit-hero">
+            <div class="visit-hero-img"></div>
+            <div class="hours-container">
+                <div>HOURS</div>
+                <div>Tuesday – Friday: 10am – 6pm <br>
+                    Saturday: 10am – 8pm <br>
+                    Sunday: 12pm – 5pm <br><br>
+                    Closed Mondays & Major Holidays</div>
+            </div>
+        </div>
+        </div> 
+        <div class="admission-location-container-bg">
+        <div class="admission-location-container">
+                        <div class="al-inner-container">
+                        <div class="al-name">ADMISSION</div>   
+                        <div class="al-text">Adults   &ensp;$12 <br>
+                        Student & Seniors   &ensp;$8 <br>
+                        Children under 12   &ensp;FREE <br>
+                        Members   &ensp;FREE 
+                        </div> 
+                        </div>
+                        <div class="al-inner-container">
+                        <div class="al-name">LOCATION</div>   
+                        <div class="al-text">123 Main Street
+                            Harrisburg, PA
+                            17110
+                        </div> 
+                        </div>
+                    </div>
+        </div>
+        <div class="frame">
+           <div class="amenities-container">
+            <div class="amenities-name">AMENITIES</div>
+            <div class="cafe">Café & Sculpture Garden</div>
+            <div class="gift-shop">Gift Shop <br> <i>featuring
+ local artists</i></div>
+            <div class="accessibility">Accessible facilities</div>
+        </div> 
+        </div>
+        
+
+    <footer>
+        <div class="newsletter-section">
+            <div class="newsletter">
+            <div class="newsletter-title">Newsletter</div>
+            <div class="block">
+                <div class="newsletter-block"></div>
+                <div class="signup-block"> SIGN UP</div>
+            </div>
+             </div>
+        </div>
+        <div class="footer-section">
+            <div class="logo"><a href="index.html"><img src="Images/AAM_Logo_White.svg" alt="Aurora Art Black Logo"></a></div>
+            <div class="footer-name-slogan">
+                <div class="footer-name">AURORA ART MUSEUM</div>
+                <div class="footer-slogan">We believe art has the power to illuminate, challenge, and inspire. </div>
+            </div>
+            <div class="footer-second-section">
+            <div class="hours">
+                <div class="hours-name">HOURS</div>
+                <div class="hours-time">Tuesday – Friday: 10am – 6pm <br>
+                Saturday: 10am – 8pm <br>
+                Sunday: 12pm – 5pm <br>
+                <i>Closed Mondays & Major Holidays</i></div>
+            </div>
+             <div class="contact">
+                <div class="contact-name">CONTACT</div>
+                <div class="contact-time">123 Main Street
+                Harrisburg, PA 17110 <br><br>info@auroraartmuseum.test</div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="footer-third-section">
+            <div>© 2025 Aurora Art Museum. All Rights Reserved.</div>
+            <div class="social-media">
+                <div class="instagram-logo"><img src="Images/Instagram_Glyph_White.svg" alt="Instagram Logo"></div>
+                <div class="x-logo"><img src="Images/logo.svg" alt="X Logo"></div>
+            </div>
+        </div>
+    </footer>
+    <script>
+    // Perform this after the window has loaded
+    window.onload = () => {
+      // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+      const toggleNavBtn = document.getElementById('toggle-nav-btn');
+      toggleNavBtn.innerHTML = '&#9776;';
+
+      // Tell button to do something on click
+      toggleNavBtn.addEventListener('click', () => {
+        // toggle the body's class attribute
+        document.body.classList.toggle('nav-open');
+        toggleNavBtn.innerHTML = document.body.classList.contains('nav-open')
+          ? '&#x2715'
+          : '&#9776;';
+      });
+    };
+  </script>
+</body>
+</html> 
