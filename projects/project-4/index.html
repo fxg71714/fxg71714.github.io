@@ -6,37 +6,178 @@
     <title>Aurora Art Museum</title>
     <link rel="icon" type="image/x-icon" href="Images/AAM_Logo_Black.svg">
     <link rel="stylesheet" href="style.css">
-<style>
-      body {
-        margin: 0;
-      }
-      nav {
-        background-color: lightblue;
-        height: 100px;
-        width: 100%;
-        position: fixed;
-      }
-      main {
-        background-color: lightgray;
-        height: 100vh;
-        width: 100%;
-        overflow-x: scroll;
-      }
-      #scroller {
-        background-color: lightgreen;
-        height: 100vh;
-        width: 50000px;
-        margin-top: 100px; /* To avoid overlap with fixed nav */
-      }
-    </style>
   </head>
-  <body>
-    <main>
-      <nav>Navigation</nav>
-      <div id="scroller">
-        <div>Scroller</div>
+  <body id="body">
+    <!-- NAVIGATION BAR -->
+ <button id="toggle-nav-btn"></button>
+    <div class="menu">
+        <div class="logo"></div>
+       <nav class="menu-list">
+        <div class="inner">
+        <ul> 
+            <li><a href="visit.html">visit</a></li>
+            <li><a href="events.html">events</a></li>
+            <li><a href="collections.html">collections</a></li>
+            <li><a href="education.html">education</a></li>
+            <li><a href="support.html">support</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a id="get-tickets" href="visit.html">get <br> tickets</a></li>
+            <li><a href="support.html">membership</a></li>
+        </ul>
+        </div>
+        </nav> 
+        </div>
+
+<!-- HORIZONTAL SCROLL SECTIONS -->
+<div class="h-scroll" id="scrollContainer">
+    <div class="section-01"><img src="Images/AAM_Logo_FULL_White.svg" alt=""></div>
+
+    <div class="section-02">
+      <a href="events.html">
+         <div class="section-02-container">
+        
+          <div>Current Exhibitions:</div>
+
+        <div>Light & Shadow: New Dimensions in Contemporary Art 
+        <br><br>
+          Local Visions: Artists of Our City
+        </div> 
       </div>
-    </main>
+      </a>
+     
+    </div>
+
+    <div class="section-03">
+      <a href="visit.html">
+        <div class="section-03-container">
+        <div>Arrange 
+        Your Visit:</div>
+
+        <div>Prepare for a Journey Through Art, History, and Creativity</div>
+      </div>
+      </a>
+    </div>
+
+     <div class="section-04">
+      <a href="collections.html">
+        <div class="section-04-container">
+        <div>Treasures of 
+        The Museum:</div>
+
+        <div>Exploring Creativity Across Time and Mediums</div>
+      </div>
+      </a>
+    </div>
+
+    <div class="section-05">
+      <div class="section-05-01">
+      <a href="education.html">
+              <div class="section-05-container">
+              <div>Activities for All Ages:</div>
+              <div>Interactive Experiences for Kids, Teens, and Adults Alike</div>
+            </div>
+            </a>
+      </div>
+      <div class="section-05-02">
+      <a href="support.html">
+              <div class="section-05-container">
+              <div>Be Part of Our Mission:</div>
+              <div>Join Our Community of Art Lovers: Contribute Through Membership or Donation to Sustain Creativity and Culture</div>
+            </div>
+            </a>
+      </div>
+    </div>
+
+    <div class="section-06">
+      <a href="about.html">
+        <div class="section-06-container">
+        <div>Aurora Art Museum</div>
+        <div>Explore the Heart of Our Museum and Its Story</div>
+      </div>
+      </a>
+    </div>
+
+    <footer id="footer-index">
+        <div class="newsletter-section-index">
+            <div class="newsletter">
+            <div class="newsletter-title">Newsletter</div>
+            <div class="block">
+                <div class="newsletter-block"></div>
+                <div class="signup-block"> SIGN UP</div>
+            </div>
+             </div>
+        </div>
+
+        <div class="footer-section-index">
+            <div class="logo"><a href="index.html"><img src="Images/AAM_Logo_White.svg" alt="Aurora Art Black Logo"></a></div>
+            <div class="footer-name-slogan">
+                <div class="footer-name">AURORA ART MUSEUM</div>
+                <div class="footer-slogan">We believe art has the power to illuminate, challenge, and inspire. </div>
+            </div>
+            <div class="footer-second-section-index">
+            <div class="hours">
+                <div class="hours-name">HOURS</div>
+                <div class="hours-time">Tuesday – Friday: 10am – 6pm <br>
+                Saturday: 10am – 8pm <br>
+                Sunday: 12pm – 5pm <br>
+                <i>Closed Mondays & Major Holidays</i></div>
+            </div>
+             <div class="contact">
+                <div class="contact-name">CONTACT</div>
+                <div class="contact-time">
+                  <div> Main Street
+                Harrisburg, PA 17110 </div><br>
+                <div>info@auroraartmuseum.test</div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="footer-third-section">
+            <div>© 2025 Aurora Art Museum. All Rights Reserved.</div>
+            <div class="social-media">
+                <div class="instagram-logo"><img src="Images/Instagram_Glyph_White.svg" alt="Instagram Logo"></div>
+                <div class="x-logo"><img src="Images/logo.svg" alt="X Logo"></div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    // Enable horizontal scrolling using vertical mouse wheel
+    const container = document.getElementById('scrollContainer');
+
+    container.addEventListener('wheel', (evt) => {
+        evt.preventDefault();
+        container.scrollLeft += evt.deltaY;
+    });
+
+    // Optional: make navbar links scroll horizontally to the correct section
+    document.querySelectorAll('.navbar a').forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            const target = document.querySelector(link.getAttribute('href'));
+            container.scrollLeft = target.offsetLeft;
+        });
+    });
+</script>
+<script>
+    // Perform this after the window has loaded
+    window.onload = () => {
+      // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+      const toggleNavBtn = document.getElementById('toggle-nav-btn');
+      toggleNavBtn.innerHTML = '&#9776;';
+
+      // Tell button to do something on click
+      toggleNavBtn.addEventListener('click', () => {
+        // toggle the body's class attribute
+        document.body.classList.toggle('nav-open');
+        toggleNavBtn.innerHTML = document.body.classList.contains('nav-open')
+          ? '&#x2715'
+          : '&#9776;';
+      });
+    };
+  </script>
   </body>
     
 </body>

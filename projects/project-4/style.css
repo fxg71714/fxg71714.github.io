@@ -3,6 +3,9 @@ body{
     margin: 0;
     font-family: "Albert Sans", sans-serif;
 }
+#body{
+     overflow: hidden;
+}
 .menu{
     display: flex;
     justify-content: space-between;
@@ -20,7 +23,7 @@ body{
     display: flex;
         flex-direction: column;
         height: 100px;
-   
+
 }
 .menu-list li a{
     display: flex;
@@ -40,17 +43,28 @@ body{
         padding-bottom: 25px;
         margin-top: 0;
         height: 100%;
+        width: 80px;
         background-color: black;
         color: white;
         text-align: center;
+        z-index: 2;
+        position: relative;
       }
 
+.logo{
+    background-image: url(Images/AAM_Logo_Black.svg);
+ width: 80px;
+ height: 80px;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
 .logo img{
     width: 80px;
     height: 80px;
     margin-top: 10px;
 }
-
 footer{
 
   left: 0;
@@ -61,10 +75,18 @@ footer{
   color: white;
   margin-top: 80px;
 }
-.newsletter-section{
+#footer-index{
+    margin-top: 0px;
+}
+.newsletter-section,
+.newsletter-section-index{
     height: 200px;
   width: 100%;
   background-color: #F2B036;
+}
+.newsletter-section-index{
+    max-width: 900px;
+    padding: 0 80px;
 }
 .newsletter{
     width: 600px;
@@ -96,16 +118,25 @@ footer{
     padding-top: 20px;
     font-size: 18px;
 }
-.footer-section{
+.footer-section,
+.footer-section-index{
     max-width: 1440px;
     margin: 0 auto;
     padding: 80px;
 }
-.footer-second-section{
+.footer-section-index{
+    width: 900px;
+}
+
+.footer-second-section,
+.footer-second-section-index{
     display: flex;
     max-width: 1440px;
     margin: 0 auto;
     justify-content: space-between;
+}
+.footer-second-section-index{
+    width: 900px;
 }
 .footer-third-section{
     display: flex;
@@ -146,7 +177,8 @@ footer{
     font-size: 18px;
 }
 .contact-time{
-    width: 600px;
+    width: 180px;
+    padding-right: 80px;
     font-size: 18px;
 }
 .social-media{
@@ -165,6 +197,7 @@ footer{
     position: absolute;
     right: 1em;
     top: 1em;
+    color: black;
   }
 
 .frame{
@@ -699,25 +732,206 @@ font-size: 20px;
     padding-left: 20px;
 }
 
+    /* ---------- HORIZONTAL SCROLL AREA ---------- */
+    .h-scroll {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: calc(100vh - 60px); /* account for navbar height */
+        scroll-behavior: smooth;
+    }
+
+    .section {
+        min-width: 100vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        color: white;
+    }
+     .section-01 {
+        background-image: url(Images/hero-img.jpg);
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+        min-width: 1000px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-01 img{
+        max-width: 700px;
+    }
+    .section-02,
+    .section-03,
+    .section-04,
+    .section-06 {
+        background-image: url(Images/current-exhibitions.jpg);
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+        min-width: 350px;
+        height: 100%;
+        display: flex;
+        padding: 60px;
+    }
+    .section-04{
+        background-image: url(Images/treasures-of-the-museum.jpg);
+    }
+     .section-06{
+        background-image: url(Images/index-aurora.jpg);
+        min-width: 250px;
+    }
+    .section-03{
+           background-image: url(Images/arrange-visit.jpg);
+        min-width: 250px;
+    }
+    .section-05-01,
+    .section-05-02{
+    background-image: url(Images/activities.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+        min-width: 350px;
+        height: 40%;
+        display: flex;
+        padding: 0 60px;
+        
+    }
+    .section-05-02{
+        background-image: url(Images/be-apart.jpg);
+        height: 60%;
+    }
+    .section-02 a,
+    .section-03 a,
+    .section-04 a,
+     .section-06 a,
+     .section-05-01 a,
+     .section-05-02 a{
+        text-decoration: none;
+        color: white;
+    }
+    .section-02-container div:nth-child(1),
+    .section-03-container div:nth-child(1),
+    .section-04-container div:nth-child(1),
+    .section-05-container div:nth-child(1),
+    .section-06-container div:nth-child(1){
+        font-size: 36px;
+        width: 250px;
+        font-weight: 700;
+        position: absolute;
+        top: 50%;
+    }
+    .section-05-container div:nth-child(1){
+        width: 300px;
+        top:30%
+    }
+
+
+    .section-02-container div:nth-child(2),
+    .section-03-container div:nth-child(2),
+    .section-04-container div:nth-child(2),
+    .section-05-container div:nth-child(2),
+     .section-06-container div:nth-child(2){
+        font-size: 20px;
+        width: 320px;
+        font-style: italic;
+         align-items: flex-end;
+         position: absolute;
+            top: 62%;
+    }
+    .section-05-container div:nth-child(2){
+        margin-top: 60px;
+        top: 42%;
+    }
+    .section-03-container div:nth-child(2),
+    .section-06-container div:nth-child(2){
+        width: 250px;
+    }
+     .section-04-container div:nth-child(2){
+        font-style: normal;
+     }
+    .one { background: #3498db; }
+    .two { background: #e67e22; }
+    .three { background: #2ecc71; }
+
+    /* Optional: hide scrollbar */
+    .h-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
   @media (max-width: 1030px) {
     .menu-list {
       display: grid;
        flex-direction: row;
       grid-template-rows: 0fr;
       transition: grid-template-rows 0.5s ease-out;
+
+    }
+    .menu-list ul {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 90px;
     }
     .menu-list li {
       display: inline-block;
+      margin-top: -45px;
     }
+     .menu-list li a{
+      color: white;
+      font-size: 24px;
+    }
+    body.nav-open .menu{
+        padding-left: 0px;
+    }
+    
     body.nav-open .menu-list {
       grid-template-rows: 1fr;
+      background-color: black;
+      padding-bottom: 20px;
+       width: 100%;
+       margin-left: -200px;
+       z-index: -2;
+       position: relative;
     }
+   
+    #get-tickets {
+        padding: 0 400px;
+        padding-top: 15px;
+        height: 35%;
+        width: 160px;
+        background-color: white;
+        color: black;
+        text-align: center;
+        margin-top: 40px; /* sets vertical positioning */
+      }
     .inner {
         overflow: hidden;
     }
-    #toggle-nav-btn {
+ #toggle-nav-btn {
         display: block;
+        background: black;
+      border: 0;
+      font-size: 55px;
+      color: white;
+      padding: 35px;
+      margin-top: -60px;
     }
+     body.nav-open #toggle-nav-btn{
+        color: white;
+     }
+     body.nav-open .logo{
+        background-image: url(Images/AAM_Logo_White.svg);
+        background-color: black;
+        margin-bottom: 100px;
+        padding-left: 80px;
+     }
     .footer{
         height: 1000px;
     }
