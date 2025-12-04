@@ -879,9 +879,10 @@ font-size: 20px;
       align-items: center;
       margin-top: 90px;
     }
-    .menu-list li {
+   
+    body.nav-open .menu-list li {
       display: inline-block;
-      margin-top: -45px;
+      margin-top: -35px;
     }
      .menu-list li a{
       color: white;
@@ -897,14 +898,12 @@ font-size: 20px;
       padding-bottom: 20px;
        width: 100%;
        margin-left: -200px;
-       z-index: -2;
-       position: relative;
     }
    
     #get-tickets {
         padding: 0 400px;
         padding-top: 15px;
-        height: 35%;
+        height: 40%;
         width: 160px;
         background-color: white;
         color: black;
@@ -922,6 +921,9 @@ font-size: 20px;
       color: white;
       padding: 35px;
       margin-top: -60px;
+      z-index: 2;
+      position: absolute;
+
     }
      body.nav-open #toggle-nav-btn{
         color: white;
@@ -1021,5 +1023,13 @@ font-size: 20px;
     .about-text-black-container div:nth-child(1){
          max-width: 550px;
          margin-top: -100px;
+    }
+}
+@media (max-width: 767px){
+    .section-01{
+        min-width: 500px;
+    }
+    .section-01 img{
+        width: 500px;
     }
 }
