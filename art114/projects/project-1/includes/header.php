@@ -19,7 +19,7 @@
         </div>
         <div class="sub-header">
            <h1>Uptrade</h1> 
-           <p class="title"> <!-- <? php echo $title;?> --> Welcome Back, <i>Trader!</i></p>
+           <p class="title"><? php echo $title;?></p>
         </div>
     </div>
     <div class="main-container">
