@@ -14,12 +14,12 @@
     <div class="header">
         <div>
             <div class="logo-container">
-                <a href="index.php"><img src="images/uptrade_logo_black.svg" alt="uptrade logo"></a>
+                <a href="home.php"><img src="images/uptrade_logo_black.svg" alt="uptrade logo"></a>
             </div>  
         </div>
         <div class="sub-header">
            <h1>Uptrade</h1> 
-           <p class="title"><? php echo $title;?></p>
+           <p class="title"><?php echo $title;?></p>
         </div>
     </div>
     <div class="main-container">
