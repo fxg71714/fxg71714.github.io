@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Circle | Let's Play</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #shape {
+            margin: 20px auto;
+        }
+
+        .circle {
+        width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Find the Circle</h1>
+    <h2>Enter two numbers to generate a circle</h2>
+
+    <input type="number" id="1" placeholder="Enter first number">
+    <input type="number" id="2" placeholder="Enter second number">
+
+    <button id="generateBtn">Generate</button>
+
+    <h2 id="result"></h2>
+    <div id="shape"></div>
+<script>
+    function calculate(a, b) {
+        return a + b;
+    }
+
+    document.getElementById("generateBtn").addEventListener("click", function() {
+
+    let number1 = parseFloat(document.getElementById("1").value);
+     let number2 = parseFloat(document.getElementById("2").value);
+
+     let result = calculate(number1, number2); 
+     document.getElementById("result").textContent = "Result: " + result;
+
+        let shapeDiv = document.getElementById("shape");
+        shapeDiv.className = "";
+
+        if (result % 3 === 0) {
+            shapeDiv.classList.add("circle");
+        } else {
+            shapeDiv.classList.add("square");
+        }
+
+           let hue = result * 40; 
+    shapeDiv.style.backgroundColor = "hsl(" + hue + ", 70%, 50%)";
+    });
+</script>
+
+
+</body>
+</html>
