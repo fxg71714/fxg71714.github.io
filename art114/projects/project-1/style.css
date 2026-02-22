@@ -74,8 +74,8 @@ html, body {
 body {
     overflow: hidden; 
       background-image: url('images/background_img.jpg');
-  background-size: cover;     /* fill the container */
-  background-position: center; /* center the image */
+  background-size: cover;  
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -142,7 +142,7 @@ margin-right: 80px;
 .search-input {
   width: 100%;
   height: 20px;
-  padding: 10px 15px 10px 45px; /* space for icon */
+  padding: 10px 15px 10px 45px; 
   border-radius: 15px;
   border: none;
   font-size: 14px;
@@ -384,12 +384,12 @@ grid-area: seven;
 }
 
 .link-container {
-  text-decoration: none; /* remove underline */
-  color: inherit;        /* keep text color */
-  display: block;        /* ensure it fills the container */
+  text-decoration: none; 
+  color: inherit;        
+  display: block;        
 }
 .link-container:hover .inner-container1 {
-   background: var(--containers); /* or a lighter shade */
+   background: var(--containers);
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   cursor: pointer;
@@ -473,7 +473,7 @@ color: var(--body);
 }
 .item:hover,
 .item2:hover {
-  background: var(--containers); /* or a lighter shade */
+  background: var(--containers); 
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
@@ -514,7 +514,7 @@ color: var(--body);
 
 .watchlist-subhead{
       display: flex;
-  justify-content: space-between;  /* pushes title left, icon right */
+  justify-content: space-between;  
   align-items: center;
 
 
@@ -524,12 +524,12 @@ color: var(--body);
     margin-top: -15px;
 }
 .sort-icon {
-  content: url('images/sort-by-icon.svg'); /* default icon */
+  content: url('images/sort-by-icon.svg'); 
 }
 
-/* Dark mode */
+
 body.dark-mode .sort-icon {
-  content: url('images/sort-by-icon-white.svg'); /* dark mode version */
+  content: url('images/sort-by-icon-white.svg'); 
 }
 
 
@@ -540,8 +540,8 @@ body.dark-mode .sort-icon {
 .watchlist-logo2{
   width: 40px;
   height: 40px;
-  border-radius: 50%;      /* makes it a circle */
-  overflow: hidden;        /* hides image outside circle */
+  border-radius: 50%;     
+  overflow: hidden;        
   display: flex;
   justify-content: center;
   align-items: center;
@@ -552,22 +552,22 @@ body.dark-mode .sort-icon {
 .watchlist-logo img {
   width: 150%;
   height: 150%;
-  object-fit: cover;       /* prevents stretching */
+  object-fit: cover;      
 }
 .watchlist-logo2 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;       /* prevents stretching */
-}
-/* Light mode */
+  object-fit: cover;
+}     
+
 .add-icon {
-  content: url('images/add_icon.svg'); /* default light icon */
+  content: url('images/add_icon.svg'); 
 }
 
 /* Dark mode */
 body.dark-mode .add-icon {
   content: url('images/add_icon_white.svg'); 
-  width: 24px;/* dark mode icon */
+  width: 24px;
 }
 .watchlist-name{
     padding-left: 10px;
@@ -655,7 +655,7 @@ body.dark-mode .add-icon {
  .chart-bg {
    background-image: url('images/bg-chart.png');
   width: 1080px;
-  height: 300px;  /* 👈 add this */
+  height: 300px;  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -665,7 +665,7 @@ body.dark-mode .add-icon {
  .chart-bg2 {
    background-image: url('images/bg-chart.png');
   width: 560px;
-  height: 300px;  /* 👈 add this */
+  height: 300px;  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -736,7 +736,7 @@ body.dark-mode .add-icon {
     color: var(--subtext);
 }
 .recent-transactions{
-    width: 100%;            /* table fills container */
+    width: 100%;            
   border-collapse: collapse; 
   margin-top: 15px;
     border-collapse: separate;
@@ -775,16 +775,16 @@ body.dark-mode .add-icon {
     color: var(--decrease);
 }
 
-body.dark-mode .icon img:nth-child(2) { /* account_icon */
+body.dark-mode .icon img:nth-child(2) { 
   content: url('images/account_icon_white.svg');
 }
 
-body.dark-mode .icon img:nth-child(3) { /* menu_icon */
+body.dark-mode .icon img:nth-child(3) { 
   content: url('images/menu_icon_white.svg');
 }
 
 
-body.dark-mode .icon img:nth-child(5) { /* logout_icon */
+body.dark-mode .icon img:nth-child(5) { 
   content: url('images/logout_icon_white.svg');
 }
 
@@ -817,10 +817,10 @@ body.dark-mode .settings-icon {
 #themeToggle {
    all: unset;
   cursor: pointer;
-  display: flex;             /* make it a flex container */
-  justify-content: center;   /* center horizontally */
-  align-items: center;       /* center vertically */
-  width: 33px;               /* button size */
+  display: flex;            
+  justify-content: center; 
+  align-items: center;      
+  width: 33px;              
   height: 33px;
   position: relative;  
   padding: 20px 0;  
@@ -845,7 +845,7 @@ body.dark-mode .theme-button::before {
 .notif-popup {
   display: none; 
   position: absolute;
-  top: 50px;          /* below the icon */
+  top: 50px;       
   right: 0;
   width: 420px;
   height: 300px;
@@ -859,7 +859,7 @@ body.dark-mode .theme-button::before {
 
 
 
-/* Show popup when active */
+
 .notif-popup.active {
   display: block;
   z-index: -1;
