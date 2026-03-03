@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  animation: slideShow 12s infinite;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+@keyframes slideShow {
+  0%   { background-image: url("Images/bg-landingpage.jpg"); }
+  33%  { background-image: url("Images/bg-landingpage_02.jpg"); }
+  66%  { background-image: url("Images/bg-landingpage_03.jpg"); }
+  100% { background-image: url("Images/bg-landingpage_04.jpg"); }
+}
+.top-header{
+    display: flex;
+    flex-direction: column;
+  align-items: center;      /* horizontal center */
+  justify-content: center;  /* vertical center */
+  height: 100vh;            /* full viewport height */
+  text-align: center;       /* center text */
+  gap: 20px;   
+}
+.top-header-00{
+    display: flex;
+    flex-direction: row;
+}
+.top-header-00{
+    display: flex;
+}
+
+.top-header-01{
+     display: flex;
+}
+.top-header-02{
+    margin-left: 200px;
+    margin-top: 25px;
+}
+.bottom-header{
+    display: flex;
+    flex-direction: row;
+    margin-top: 300px;
+    gap: 50px;
+}
+.fine-print{
+    color: white;
+}
+.bottom-header-inner{
+    display: flex;
+        gap: 50px;
+}
+.bottom-header-01{
+    display: flex;
+    
+}
+.bottom-header-01 img{
+    width: 24px;
+    height: 24px;
+}
+.bottom-header-01 p{
+    margin-top: 3px;
+    margin-left: 5px;
+    font-weight: 600;
+    color: white;
+}
+
+.signin-btn,
+.signin-btn2 {
+    display: flex;
+    align-items: center;   /* vertical alignment */
+    justify-content: center;
+    gap: 10px;  
+               /* space between icon & text */
+    width: 200px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    color: black;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.signin-btn3{
+    display: flex;
+    align-items: center;   /* vertical alignment */
+    justify-content: center;
+    gap: 10px;  
+               /* space between icon & text */
+    width: 200px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: rgb(0, 0, 0);
+    border: 1px solid #000000;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin-top: 10px;
+}
+.signin-btn img{
+    width: 32px;
+    height: 100%;
+}
+.signin-btn2 img,
+.signin-btn3 img{
+    width: 32px;
+    height: 100%;
+    margin-left: -10px;
+
+}
+.signin-btn:hover,
+.signin-btn2:hover,
+.signin-btn3:hover {
+  transform: scale(1.05); 
+}
+
+.wok-landingpage-logo{
+    width: 250px;
+  height: auto;
+}
+.wok-landingpage-slogan{
+    color: white;
+    font-weight: 800;
+    font-size: 36px;
+    padding: 20px;
+    margin-top: 90px;
+}
+.wok-landingpage-slogan p{
+    margin-top: -30px;
+}
+
+@media (max-width: 800px) {
+.bottom-header{
+    flex-direction: column;
+    gap: 0;
+    margin-top: 7cap;
+}
+.top-header-00{
+    flex-direction: column;
+}
+.top-header-02{
+    margin-left: 100px;
+}
+.fine-print{
+    width: 300px;
+}
+}

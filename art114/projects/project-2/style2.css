@@ -1,0 +1,367 @@
+body {
+  margin: 0;
+  overflow: hidden; 
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+   display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.scroll-container {
+  flex: 1;
+  overflow-y: auto; 
+}
+.wok-logo{
+      justify-self: start;
+}
+.wok-logo img{
+       width: clamp(70px, 10vw, 140px);
+  height: auto;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.stories{
+     display: flex;              /* makes items horizontal */
+  gap: 20px;                  /* spacing between stories */
+
+  overflow-x: auto;           /* enables horizontal scroll */
+  overflow-y: hidden;
+
+  white-space: nowrap;        /* prevents wrapping */
+  scroll-behavior: smooth;    /* smooth scroll */
+  padding: 10px 20px;
+  scrollbar-width: none;
+
+}
+.stories::-webkit-scrollbar {
+  display: none;
+}
+.profile-circle,
+.profile-circle2 {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-circle img,
+.profile-circle2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-circle::after {
+    content: "";
+    position: absolute;
+    inset: 0;                
+    border-radius: 50%;
+    border: 8px solid rgba(149, 23, 44, 0.35); 
+    pointer-events: none;     
+}
+
+.profile-circle2::after{
+    content: "";
+    position: absolute;
+    inset: 0;                
+    border-radius: 50%;
+    border: 8px solid rgba(255, 191, 54, 0.35); 
+    pointer-events: none;   
+}
+.profile-circle-container{
+    margin-top: 20px;
+}
+
+.profile-circle-container p{
+    font-weight: 600;
+    margin-left: -6px;
+    margin-top: 5px;
+}
+.scroll-container{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.post{
+    width: 460px;
+    margin-bottom: 60px;
+}
+.post-part-01{
+    display: flex;
+}
+.profile-circle-small {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-circle-small img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-username{
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 010px;
+    width: 130px;
+}
+.post-more{
+    transform: rotate(90deg);
+      margin-left: auto;
+      width: 36px;
+}
+.post-part-02{
+    width: 460px;
+    height: 460px;
+}
+
+.post-img {
+    position: relative;
+    width: 460px;
+    height: 460px;
+    overflow: hidden;
+    margin-top: 10px;
+    z-index: -2;
+}
+
+.post-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.post-redbar{
+     height: 12px;               
+    background-color: rgba(149, 23, 44, 0.35);      
+    width:460px;  
+}
+
+.post-part-03{
+    display: flex;
+    margin: 0 auto;
+    width: 420px;
+    margin-top: 10px;
+    gap: 20px;
+      position: relative;
+}
+.post-part-04{
+    margin: 0 auto;
+    width: 420px;
+}
+
+.post-part-05{
+    display: flex;
+    margin: 0 auto;
+    width: 420px;
+    margin-top: -10px;
+    gap: 20px;
+    z-index: -22px;
+}
+
+.liked,
+.comment,
+.restaurant,
+.country{
+    display: flex;
+}
+.liked img,
+.comment img{
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+}
+
+.restaurant img,
+.country img{
+    width: 28px;
+    height: 28px;
+    margin-top: 8px;
+}
+
+.liked p,
+.comment p,
+.restaurant p,
+.country p{
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.recipes-bookmark{
+    margin-left: 193px;
+}
+
+.recipes-bookmark img{
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+}
+
+
+
+.notif-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.notif-container{
+    float: right;
+    width: 50px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 15px;
+    margin-top: 0px;
+}
+.notif-container img{
+   transform: rotate(90deg);
+      margin-left: 220px;
+      width: 36px;
+        z-index: 22px;
+}
+
+.notif-container:active,
+.notif-container:focus {
+  background-color: none;
+  outline: none;
+}
+.notif-popup {
+    position: relative;
+  display: none;    
+  right: 0;
+  width: 170px;
+  height: 210px;
+  background: #ececec;
+  border-radius: 20px;
+  top: 0px;
+  padding-top: 10px;
+  font-weight: 600;
+  text-align: center;
+   margin-left: 106px;
+   margin-top: -40px;
+}
+.notif-popup div{
+  margin-top: 35px;
+  cursor: pointer;
+}
+
+.notif-popup.active {
+  display: block;
+  z-index: -1;
+}
+.sharewhite{
+  width: 170px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+   padding-bottom: 15px;
+  background-color: white;
+  margin-bottom: -10px;
+}
+.report{
+ color: #95172C;
+}
+
+.recipe-container {
+  display: inline-block;
+  cursor: pointer;
+}
+.recipe-container{
+    background-image: url('images/book-black.png');
+    background-size: 100%;  
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    border-radius: 15px;
+}
+.recipe-container img{
+      width: 36px;
+         z-index: 22px;
+        
+}
+
+.recipe-container:active,
+.recipe-container:focus {
+  background-color: none;
+  outline: none;
+}
+.recipe-popup {
+  display: none;
+  position: absolute;   
+  top: 50px;            
+  right:-60px;
+  width: 460px;
+  background-color: white;
+  padding: 20px;
+
+  z-index: 999;      
+}
+
+.recipe-popup div{
+   margin-top: 35px;
+  cursor: pointer;
+}
+
+
+.recipe-popup.active {
+  display: block;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;            
+}
+
+.floating-nav {
+  position: fixed;            
+  top: 90%;                     
+  left: 50%;                   
+  transform: translate(-50%, -50%);
+    width: 400px;
+    height: 30px;
+  background: rgba(217,103,122,0.5);
+  backdrop-filter: blur(8px);
+  padding: 20px 40px;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  z-index: 9999;    
+  display: flex;   
+  margin: 0 auto;      
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.post-button{
+      background-image: url('images/post-icon-black.svg');
+    background-size: 90%;  
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+   
+}
+
+@media (max-width: 768px) {
+.wok-logo img{
+    margin-top: -50px;
+    margin-left: 25px;
+}
+.stories{
+    width: 340px;
+}
+}
