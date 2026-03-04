@@ -38,8 +38,9 @@ body {
 
   white-space: nowrap;        /* prevents wrapping */
   scroll-behavior: smooth;    /* smooth scroll */
-  padding: 10px 20px;
+  
   scrollbar-width: none;
+  margin: 10px 20px;
 
 }
 .stories::-webkit-scrollbar {
@@ -362,6 +363,6 @@ body {
     margin-left: 25px;
 }
 .stories{
-    width: 340px;
+    width: 360px;
 }
 }

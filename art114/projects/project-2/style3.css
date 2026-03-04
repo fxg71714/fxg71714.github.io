@@ -1,0 +1,414 @@
+body {
+  margin: 0;
+  overflow: hidden; 
+  font-family: "Roboto Flex", sans-serif;
+}
+.header {
+   display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+.wok-logo{
+      justify-self: start;
+}
+.wok-logo img{
+       width: clamp(70px, 10vw, 140px);
+  height: auto;
+    margin-left: 20px;
+}
+h1{
+    margin-top: 100px;
+    font-weight: 600;
+    color: #95172C;
+}
+
+.search-container {
+  position: relative;
+  width: 200px;
+  margin-left: 50px;
+
+}
+.searchfilter{
+ display: flex;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('images/search-icon-red.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.search-input {
+  width: 100%;
+  height: 20px;
+  padding: 10px 15px 10px 45px; 
+  border-radius: 15px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  background-color: rgb(207, 207, 207, 0.25);
+}
+
+.floating-nav {
+  position: fixed;            
+  top: 90%;                     
+  left: 50%;                   
+  transform: translate(-50%, -50%);
+    width: 400px;
+    height: 30px;
+  background: rgba(217,103,122,0.5);
+  backdrop-filter: blur(8px);
+  padding: 20px 40px;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  z-index: 9999;    
+  display: flex;   
+  margin: 0 auto;      
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.post-button{
+      background-image: url('images/post-icon-black.svg');
+    background-size: 90%;  
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+   
+}
+.searchfilter{
+    display: flex;
+}
+
+.body-explore{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+     overflow-y: auto; 
+     flex: 1;
+
+}
+
+.recipes-bookmark{
+    margin-left: auto;
+}
+
+.recipes-bookmark img{
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+}
+.recipe-container {
+  display: inline-block;
+  cursor: pointer;
+  
+}
+.recipe-container{
+    background-image: url('images/filter-icon-red.svg');
+    background-size: 100%;  
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    border-radius: 15px;
+    margin-right: 50px;
+      z-index: 999px;
+}
+.recipe-container img{
+      width: 36px;
+
+        
+}
+.recipe-header{
+    display: flex;
+       color: #95172C;
+}
+.recipe-header h4{
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+.recipe-header img{
+    margin-left: 430px;
+    margin-top: -45px;
+}
+
+.recipe-container:active,
+.recipe-container:focus {
+  background-color: none;
+  outline: none;
+  
+}
+.recipe-popup {
+  display: none;
+  position: absolute;   
+  max-width: 520px;
+  height: 770px;
+  margin-left: -508px;
+  margin-top: -10px;
+  background-color: #D9D9D9;
+  border-radius: 20px;
+  padding: 20px;
+  z-index: 999;      
+}
+
+.recipe-popup div{
+   margin-top: 35px;
+  cursor: pointer;
+}
+
+
+.recipe-popup.active {
+  display: block;
+  
+}
+
+.scroll-container {
+  height: 75vh;         
+  overflow-y: auto;       
+  overflow-x: hidden;
+  margin: 30px;
+   
+}
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+.large {
+  grid-row: span 2;
+  height: 100%;
+}
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.grid-item {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  overflow: hidden;
+  border-radius: 20px;
+
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+   
+}
+
+.grid-item:hover{
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+}
+.explore-filter{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.searchfilter2{
+    display: flex;
+}
+.search-container2 {
+  position: relative;
+  width: 420px;
+  margin-left: 50px;
+   display: flex;
+}
+
+.search-icon2 {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  margin-left: auto;
+  background-image: url('images/search-icon-red.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.dropdown-icon {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  margin-top: 3px;
+  margin-left: -40px;
+  background-image: url('images/dropdown-icon-red.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 999;
+}
+
+.search-input2 {
+  width: 200px;
+  height: 20px;
+  padding: 10px 15px 10px 15px; 
+  border-radius: 15px 0px 0px 15px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  background-color: white;
+  z-index: 999;
+}
+
+.search-input3 {
+  width: 45px;
+  height: 20px;
+  padding: 10px 15px 10px 15px; 
+  border-radius: 0px 15px 15px 0px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  background-color: white;
+  font-weight: 600;
+  z-index: 999;
+  color: black;
+  border-left: 2px solid #D9D9D9;
+}
+
+.explore-location{
+    display: flex;
+    margin-left: 65px;
+   color: rgb(0, 0, 0, 0.5);
+}
+.explore-location p{
+    margin-top: -15px;
+}
+.explore-location img{
+    width: 24px;
+    height: 24px;
+     margin-top: -20px;
+}
+
+.dropdown,
+.dropdown2,
+.dropdown3,
+.dropdown4 {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  background: white;
+width: 420px;
+height: 60px;
+ margin-left: 50px;
+}
+.dropdown2 {
+ top: -35px;
+}
+.dropdown3{
+    top: -70px;
+}
+.dropdown4{
+    top: -105px;
+}
+
+.dropdown-btn {
+  padding: 10px 15px;
+  cursor: pointer;
+   z-index: 9999;
+border: none;
+background: white;
+ text-align: left;
+ font-size: 16px;
+ font-weight: 600;
+ 
+}
+
+.dropdown-btn2 {
+  padding: 10px 15px;
+  cursor: pointer;
+border: none;
+background: white;
+ text-align: left;
+ font-size: 16px;
+ font-weight: 600;
+
+ 
+}
+.dropdown-btn-save {
+  padding: 10px 15px;
+  cursor: pointer;
+   z-index: 9999;
+border: none;
+background: #95172C;
+color: white;
+ font-size: 16px;
+ font-weight: 600;
+ width: 100px;
+ height: 50px;
+ text-align: center;
+ border-radius: 50px;
+ margin-left: 370px;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 400px;
+  padding: 10px;
+  
+}
+
+.dropdown-content label {
+  display: block;
+  margin-bottom: 8px;
+  
+}
+
+.dropdown img,
+.dropdown2 img,
+.dropdown3 img,
+.dropdown4 img{
+  margin-left: auto;
+  margin-top: 13px;
+  margin-right: 15px;
+}
+
+
+@media (max-width: 768px) {
+.wok-logo img{
+    margin-top: -50px;
+    margin-left: 25px;
+}
+.explore-grid{
+      grid-template-columns: repeat(3, 1fr);
+}
+.recipe-popup{
+     max-width: 400px;
+     margin-left: -388px;
+}
+.recipe-header img{
+    margin-left: 310px;
+    margin-top: -45px;
+}
+.dropdown,
+.dropdown2,
+.dropdown3,
+.dropdown4 {
+    width: 360px;
+    margin-left: 20px;
+}
+.search-container2 {
+    margin-left: 20px;
+    width: 360px;
+}
+.explore-location{
+    margin-left: 40px;
+}
+.dropdown-btn-save{
+    margin-left: 290px;
+}
+}
