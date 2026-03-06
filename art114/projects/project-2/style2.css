@@ -30,14 +30,14 @@ body {
     margin-left: 50px;
 }
 .stories{
-     display: flex;              /* makes items horizontal */
-  gap: 20px;                  /* spacing between stories */
+     display: flex;              
+  gap: 20px;                  
 
-  overflow-x: auto;           /* enables horizontal scroll */
+  overflow-x: auto;           
   overflow-y: hidden;
 
-  white-space: nowrap;        /* prevents wrapping */
-  scroll-behavior: smooth;    /* smooth scroll */
+  white-space: nowrap;       
+  scroll-behavior: smooth;    
   
   scrollbar-width: none;
   margin: 10px 20px;

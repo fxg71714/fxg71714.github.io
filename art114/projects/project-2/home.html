@@ -330,8 +330,8 @@
   const stories = document.querySelector(".stories");
 
 stories.addEventListener("wheel", (e) => {
-  e.preventDefault();                 // stop vertical scrolling
-  stories.scrollLeft += e.deltaY;     // scroll horizontally
+  e.preventDefault();                
+  stories.scrollLeft += e.deltaY;     
 });
 
 
@@ -340,7 +340,6 @@ stories.addEventListener("wheel", (e) => {
     document.body.classList.toggle("no-scroll");
 });
 
-// Optional: click outside to close
 document.addEventListener('click', (e) => {
   if (!recipeButton.contains(e.target)) {
     recipePopup.classList.remove('active');
@@ -354,7 +353,6 @@ document.addEventListener('click', (e) => {
     document.body.classList.toggle("no-scroll");
 });
 
-// Optional: click outside to close
 document.addEventListener('click', (e) => {
   if (!recipeButton2.contains(e.target)) {
     recipePopup2.classList.remove('active');
@@ -367,7 +365,6 @@ document.addEventListener('click', (e) => {
     document.body.classList.toggle("no-scroll");
 });
 
-// Optional: click outside to close
 document.addEventListener('click', (e) => {
   if (!recipeButton3.contains(e.target)) {
     recipePopup3.classList.remove('active');
@@ -380,7 +377,7 @@ document.addEventListener('click', (e) => {
   notifPopup.classList.toggle('active');
 });
 
-// Optional: click outside to close
+
 document.addEventListener('click', (e) => {
   if (!notifButton.contains(e.target)) {
     notifPopup.classList.remove('active');
