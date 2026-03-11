@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+    <title>Account</title>
+     <link rel="icon" type="image/x-icon" href="Images/Wok-logo-red.png">
+      <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+     
+  <div class="header">
+    <div class="wok-logo">
+        <img src="Images/Wok-logo-red.svg" alt="Wok Logo">
+    </div>
+    <h1>Account</h1>
+    </div>
+    <div class="floating-nav">
+  <a href="home.html"><img src="Images/home-icon-white.svg" alt="Home"></a>
+  <a href="explore.html"><img src="Images/search-icon-white.svg" alt="Explore"></a>
+  <a href="saved.html"><img src="Images/bookmark-icon-white.svg" alt="Saved"></a>
+  <div class="post-button"></div>
+    <a href="inbox.html"><img src="Images/inbox-icon-white.svg" alt="Inbox"></a>
+  <a href="account.html"><img src="Images/account-icon-white.svg" alt="Account"></a>
+  <a href="settings.html"><img src="Images/settings-icon-white.svg" alt="Settings"></a>
+</div>
+
+
+<div class="body-explore">
+            
+</div>
+</div>
+<div class="scroll-container">
+            
+            <div class="inbox-container">
+              
+              <div class="more-container">
+               <img src="Images/move_icon.svg" alt="More"> 
+              </div>
+       
+              
+              <div class="profile-container">
+                <div class="profile-img"></div>
+              </div>
+              <h2>@janedoe</h3>
+          
+              <div class="bio">
+                <div>
+                  <h3>Jane Done</h3>
+                  <p>📍 Trying all the hidden gems & secret menus</p>
+                </div>
+                <div>
+                  <p><b>449</b> <br>Followers</p>
+                  <p><b>290</b> <br>Followings
+                  </p>
+                </div>
+              </div>
+         
+              <div class="account-container">
+                <div class="account-btn">Follow</div>
+                <div class="account-btn">Message</div>
+
+              </div>
+           
+            </div>
+               <div class="inbox-container2">
+                <div class="explore-grid">
+            <div class="grid-item"><img src="Images/account-img1.jpg" /></div>
+            <div class="grid-item"><img src="Images/account-img2.jpg" /></div>
+            <div class="grid-item"><img src="Images/account-img3.jpg" /></div>
+            <div class="grid-item"><img src="Images/account-img4.jpg" /></div>
+            
+            </div>
+               </div>
+    </div>
+    
+
+    
+    
+    <script>
+        const recipeButton = document.getElementById('recipeButton');
+  const recipePopup = document.getElementById('recipePopup');
+    const btn = document.querySelector('.dropdown-btn');
+  const menu = document.querySelector('.dropdown-content');
+
+  btn.addEventListener('click', () => {
+    menu.style.display = 
+      menu.style.display === 'block' ? 'none' : 'block';
+  });
+
+  // Optional: close if clicking outside
+  window.addEventListener('click', (e) => {
+    if (!e.target.closest('.dropdown')) {
+      menu.style.display = 'none';
+    }
+  });
+
+   recipeButton.addEventListener('click', () => {
+  recipePopup.classList.toggle('active');
+    document.body.classList.toggle("no-scroll");
+});
+
+    </script>
+
+</body>
+</html>

@@ -76,7 +76,7 @@ h1{
   gap: 12px;
 }
 .post-button{
-      background-image: url('Images/post-icon-black.svg');
+   background-image: url('Images/post-icon-black.svg');
     background-size: 90%;  
     background-position: center;
     background-repeat: no-repeat;
@@ -112,10 +112,11 @@ h1{
 .recipe-container {
   display: inline-block;
   cursor: pointer;
+  margin-right: 30px;
   
 }
 .recipe-container{
-    background-image: url('Images/filter-icon-red.svg');
+    background-image: url('Images/add-icon.svg');
     background-size: 100%;  
     background-position: center;
     background-repeat: no-repeat;
@@ -184,13 +185,9 @@ h1{
 .scroll-container::-webkit-scrollbar {
   display: none;
 }
-.large {
-  grid-row: span 2;
-  height: 100%;
-}
 .explore-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 5px;
 }
 
@@ -213,7 +210,23 @@ h1{
 .grid-item:hover{
     transform: translateY(-2px);
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(217,103,122,0.75);
+}
+.More{
+   position: absolute;
+  bottom: 20px;
+ right: 30px;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+
 .explore-filter{
     margin: 0 auto;
     justify-content: center;
@@ -235,7 +248,7 @@ h1{
   height: 30px;
   margin-top: 5px;
   margin-left: auto;
-  background-image: url('images/search-icon-red.svg');
+  background-image: url('Images/search-icon-red.svg');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -376,16 +389,41 @@ color: white;
   margin-top: 13px;
   margin-right: 15px;
 }
+.saved-grid{
+ display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 
+}
+
+.saved-idv-container{
+  display: flex;
+  max-width: 600px;
+}
+.saved-idv-container img{
+margin-left: auto;
+width: 32px;
+}
+.saved-idv-container img:hover{
+  transform: translateY(-2px);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+ 
+
+.saved-idv-container span{
+  color: rgba(217,103,122,0.5);
+}
+.grey{
+  background-color: #D9D9D9;
+}
 
 @media (max-width: 768px) {
 .wok-logo img{
     margin-top: -50px;
     margin-left: 25px;
 }
-.explore-grid{
-      grid-template-columns: repeat(3, 1fr);
-}
+
 .recipe-popup{
      max-width: 400px;
      margin-left: -388px;
@@ -411,4 +449,14 @@ color: white;
 .dropdown-btn-save{
     margin-left: 290px;
 }
+.saved-grid{
+   grid-template-columns: repeat(1, 1fr);
+}
+.different{
+  max-width: 100%;
+}
+.saved-idv-container{
+  max-width: 764px;
+}
+
 }

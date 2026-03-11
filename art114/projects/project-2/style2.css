@@ -280,7 +280,7 @@ body {
   cursor: pointer;
 }
 .recipe-container{
-    background-image: url('images/book-black.png');
+    background-image: url('Images/book-black.png');
     background-size: 100%;  
     background-position: center;
     background-repeat: no-repeat;
@@ -346,7 +346,7 @@ body {
 }
 
 .post-button{
-      background-image: url('images/post-icon-black.svg');
+      background-image: url('Images/post-icon-black.svg');
     background-size: 90%;  
     background-position: center;
     background-repeat: no-repeat;

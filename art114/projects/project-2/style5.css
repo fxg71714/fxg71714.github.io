@@ -76,7 +76,7 @@ h1{
   gap: 12px;
 }
 .post-button{
-      background-image: url('Images/post-icon-black.svg');
+    background-image: url('Images/post-icon-black.svg');
     background-size: 90%;  
     background-position: center;
     background-repeat: no-repeat;
@@ -115,7 +115,7 @@ h1{
   
 }
 .recipe-container{
-    background-image: url('Images/filter-icon-red.svg');
+    background-image: url('Images/menu-icon-red.svg');
     background-size: 100%;  
     background-position: center;
     background-repeat: no-repeat;
@@ -140,7 +140,7 @@ h1{
 }
 
 .recipe-header img{
-    margin-left: 430px;
+    margin-left: 188px;
     margin-top: -45px;
 }
 
@@ -153,9 +153,9 @@ h1{
 .recipe-popup {
   display: none;
   position: absolute;   
-  max-width: 520px;
-  height: 770px;
-  margin-left: -508px;
+  max-width: 220px;
+  height: 200px;
+  margin-left: -208px;
   margin-top: -10px;
   background-color: #D9D9D9;
   border-radius: 20px;
@@ -216,8 +216,17 @@ h1{
 }
 .explore-filter{
     margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+    font-weight: 600;
+    
+}
+.explore-filter-01{
+margin-top: -30px;
+margin-bottom: -10px;
+text-align: center;
+}
+.explore-filter-02{
+  margin-top: 25px;
+  text-align: center;
 }
 .searchfilter2{
     display: flex;
@@ -235,21 +244,11 @@ h1{
   height: 30px;
   margin-top: 5px;
   margin-left: auto;
-  background-image: url('images/search-icon-red.svg');
+  background-image: url('Images/search-icon-red.svg');
   background-size: contain;
   background-repeat: no-repeat;
 }
-.dropdown-icon {
-  display: flex;
-  width: 36px;
-  height: 36px;
-  margin-top: 3px;
-  margin-left: -40px;
-  background-image: url('Images/dropdown-icon-red.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: 999;
-}
+
 
 .search-input2 {
   width: 200px;
@@ -292,26 +291,16 @@ h1{
      margin-top: -20px;
 }
 
-.dropdown,
-.dropdown2,
-.dropdown3,
-.dropdown4 {
+.dropdown
+{
   position: relative;
   display: inline-block;
   display: flex;
-  background: white;
-width: 420px;
+  background: rgb(0, 0, 0);
+width: 240px;
 height: 60px;
- margin-left: 50px;
-}
-.dropdown2 {
- top: -35px;
-}
-.dropdown3{
-    top: -70px;
-}
-.dropdown4{
-    top: -105px;
+ border-radius: 10px;
+
 }
 
 .dropdown-btn {
@@ -319,39 +308,18 @@ height: 60px;
   cursor: pointer;
    z-index: 9999;
 border: none;
-background: white;
- text-align: left;
- font-size: 16px;
- font-weight: 600;
- 
-}
-
-.dropdown-btn2 {
-  padding: 10px 15px;
-  cursor: pointer;
-border: none;
-background: white;
- text-align: left;
- font-size: 16px;
- font-weight: 600;
-
- 
-}
-.dropdown-btn-save {
-  padding: 10px 15px;
-  cursor: pointer;
-   z-index: 9999;
-border: none;
-background: #95172C;
+background: rgb(0, 0, 0);
 color: white;
+padding-left: 90px;
+margin-left: -20px;
  font-size: 16px;
  font-weight: 600;
- width: 100px;
- height: 50px;
  text-align: center;
- border-radius: 50px;
- margin-left: 370px;
+ border-radius: 10px;
+ 
 }
+
+
 
 
 .dropdown-content {
@@ -377,6 +345,66 @@ color: white;
   margin-right: 15px;
 }
 
+.inbox-container{
+  max-width: 500px;
+  height: 700px;
+  background-color: rgb(207, 207, 207, 0.25);
+  margin: 0 auto;
+  border-radius: 20px;
+  padding-top: 5px;
+}
+.inbox-container-idv{
+  display: flex;
+  background-color: white;
+  max-width: 480px;
+  height: 70px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.inbox-container-idv:hover{
+   transform: translateY(-2px);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.inbox-profile,
+.inbox-profile2,
+.inbox-profile3,
+.inbox-profile4,
+.inbox-profile5{
+  width: 52px;
+  height: 52px;
+   background-image: url("Images/itsavajames.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-top: 8px;
+  margin-left: 15px;
+}
+.inbox-profile2{
+   background-image: url("Images/umamihouse.jpg");
+}
+.inbox-profile3{
+   background-image: url("Images/heyitsnoahh.jpg");
+}
+.inbox-profile4{
+   background-image: url("Images/masonreed.jpg");
+}
+.inbox-profile5{
+   background-image: url("Images/chloe.miller.jpg");
+}
+.inbox-text{
+  margin: 10px;
+}
+.inbox-text div:nth-child(1){
+font-weight: 600;
+}
+.inbox-time{
+  margin-left: auto;
+  padding: 20px;
+}
+h3{
+  margin-left: 20px;
+}
 
 @media (max-width: 768px) {
 .wok-logo img{
@@ -386,21 +414,7 @@ color: white;
 .explore-grid{
       grid-template-columns: repeat(3, 1fr);
 }
-.recipe-popup{
-     max-width: 400px;
-     margin-left: -388px;
-}
-.recipe-header img{
-    margin-left: 310px;
-    margin-top: -45px;
-}
-.dropdown,
-.dropdown2,
-.dropdown3,
-.dropdown4 {
-    width: 360px;
-    margin-left: 20px;
-}
+
 .search-container2 {
     margin-left: 20px;
     width: 360px;
@@ -408,7 +422,10 @@ color: white;
 .explore-location{
     margin-left: 40px;
 }
-.dropdown-btn-save{
-    margin-left: 290px;
-}
+
+.inbox-container{
+  max-width: 450px;
+
+  }
+  
 }

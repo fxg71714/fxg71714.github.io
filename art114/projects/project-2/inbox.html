@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+    <title>Inbox</title>
+     <link rel="icon" type="image/x-icon" href="Images/Wok-logo-red.png">
+      <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+     
+  <div class="header">
+    <div class="wok-logo">
+        <img src="Images/Wok-logo-red.svg" alt="Wok Logo">
+    </div>
+    <h1>Inbox</h1>
+    </div>
+    <div class="floating-nav">
+  <a href="home.html"><img src="Images/home-icon-white.svg" alt="Home"></a>
+  <a href="explore.html"><img src="Images/search-icon-white.svg" alt="Explore"></a>
+  <a href="saved.html"><img src="Images/bookmark-icon-white.svg" alt="Saved"></a>
+  <div class="post-button"></div>
+    <a href="inbox.html"><img src="Images/inbox-icon-white.svg" alt="Inbox"></a>
+  <a href="account.html"><img src="Images/account-icon-white.svg" alt="Account"></a>
+  <a href="settings.html"><img src="Images/settings-icon-white.svg" alt="Settings"></a>
+</div>
+
+
+<div class="body-explore">
+        <div class="searchfilter">
+            <div class="search-container">
+            <span class="search-icon"></span>
+            <input type="text" class="search-input" placeholder="Username, unread...">
+            </div>  
+        <div class="recipes-bookmark">
+            <div class="recipe-container" id="recipeButton">
+            <div class="recipe-popup" id="recipePopup">
+            <div class="recipe-header">
+            <img src="Images/menu-icon-red.svg" alt="">
+            </div>
+            
+            <div class="explore-filter">
+              <p class="explore-filter-01">Notifications</p>
+                <div class="dropdown">
+                <button class="dropdown-btn">Messages</button>
+                </div>
+                  <p class="explore-filter-02">Friends</p>
+
+               
+            
+          
+            </div>
+        </div>
+        </div>
+</div>
+</div>
+<div class="scroll-container">
+            
+            <div class="inbox-container">
+              <h3>Messages</h3>
+
+              <div class="inbox-container-idv">
+                <div class="inbox-profile"></div>
+                <div class="inbox-text">
+                  <div>itsavajames</div>
+                  <div>You: Check out this post!</div>
+                </div>
+                <div class="inbox-time">3 min</div>
+              </div>
+
+              <div class="inbox-container-idv">
+                <div class="inbox-profile2"></div>
+                <div class="inbox-text">
+                  <div>umamihouse</div>
+                  <div>You: Check out this post!</div>
+                </div>
+                <div class="inbox-time">14 min</div>
+              </div>
+
+               <div class="inbox-container-idv">
+                <div class="inbox-profile3"></div>
+                <div class="inbox-text">
+                  <div>heyitsnoahh</div>
+                  <div>You: Check out this post!</div>
+                </div>
+                <div class="inbox-time">15 min</div>
+              </div>
+
+               <div class="inbox-container-idv">
+                <div class="inbox-profile4"></div>
+                <div class="inbox-text">
+                  <div>masonreed</div>
+                  <div>You: Check out this post!</div>
+                </div>
+                <div class="inbox-time">21 min</div>
+              </div>
+
+               <div class="inbox-container-idv">
+                <div class="inbox-profile5"></div>
+                <div class="inbox-text">
+                  <div>chloe.miller</div>
+                  <div>You: Check out this post!</div>
+                </div>
+                <div class="inbox-time">56 min</div>
+              </div>
+
+            </div>
+
+            
+            </div>
+        </div>
+
+    
+    
+    <script>
+        const recipeButton = document.getElementById('recipeButton');
+  const recipePopup = document.getElementById('recipePopup');
+    const btn = document.querySelector('.dropdown-btn');
+  const menu = document.querySelector('.dropdown-content');
+
+  btn.addEventListener('click', () => {
+    menu.style.display = 
+      menu.style.display === 'block' ? 'none' : 'block';
+  });
+
+  // Optional: close if clicking outside
+  window.addEventListener('click', (e) => {
+    if (!e.target.closest('.dropdown')) {
+      menu.style.display = 'none';
+    }
+  });
+
+   recipeButton.addEventListener('click', () => {
+  recipePopup.classList.toggle('active');
+    document.body.classList.toggle("no-scroll");
+});
+
+    </script>
+
+</body>
+</html>
