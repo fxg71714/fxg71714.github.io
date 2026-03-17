@@ -1,141 +1,130 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hero Example</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+      body {
+        background-color: #666;
+        text-align: center;
+      }
+      #hero {
+        overflow: hidden;
+        width: 800px;
+        height: 400px;
+        margin: 0 auto;
+        background-color: #ccc;
+        position: relative;
+      }
+      #hero__caption {
+        color: #fff;
+        position: absolute;
+        width: 320px;
+        height: 380px;
+        right: 1200px;
+        top: 0;
+        background-color: #000;
+        text-align: left;
+        padding: 20px;
 
-.recipe-container {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-.recipe-container{
-    float: right;
-    background-image: url('images/book-black.png');
-    background-size: 60%;  
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 40px;
-    border-radius: 15px;
-}
-.recipe-container img{
-      margin-left: auto;
-      width: 36px;
-}
+        animation-name: moveCaption;
+        animation-duration: 1s;
+        animation-delay: 0;
+      }
+      #bgd {
+        width: 800px;
+        height: 400px;
+        background-image: url(https://picsum.photos/800/400);
+        opacity: 0;
+        animation-name: fadeBgd;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        transition-timing-function: ease-out;
+      }
+      #hero__title {
+        opacity: 0;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-delay: 2.4s;
+      }
+      #hero__meta {
+        opacity: 0;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-delay: 3s;
+      }
+      a#hero__cta {
+        text-decoration: none;
+        opacity: 0;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-delay: 4s;
+        display: inline-block;
+        border: 2px solid #fff;
+        padding: 5px 10px;
+      }
+      a#hero__cta:link,
+      a#hero__cta:visited {
+        color: #fff;
+      }
+      a#hero__cta:hover {
+        background-color: #fff;
+        color: #000;
+      }
+      @keyframes moveCaption {
+        from {
+          right: -1200px;
+        }
+        to {
+          right: 0;
+        }
+      }
 
-.recipe-container:active,
-.recipe-container:focus {
-  background-color: none;
-  outline: none;
-}
-.recipe-popup {
-  display: none; 
-  position: absolute;      
-  right: 0;
-  width: 400px;
-  height: 1280px;
-  z-index: -2;
-  font-weight: 600;
-  margin-top: 20px;
-  padding: 30px;
-}
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes fadeBgd {
+        from {
+          opacity: 0;
+          filter: blur(10px);
+          background-size: 200%;
+        }
+        to {
+          opacity: 1;
+          filter: blur(0);
+          background-size: 100%;
+        }
+      }
+    </style>
+  </head>
 
-.recipe-popup div{
-   margin-top: 35px;
-  cursor: pointer;
-}
-
-
-.recipe-popup.active {
-  display: block;
-  z-index: -1;
-  backdrop-filter: blur(3px);
-}
-
-</style>
-</head>
-<body>
-      <div class="recipe-container" id="recipeButton">
- 
-  <div class="recipe-popup" id="recipePopup">
-      <h2>Raspberry Cheesecake Recipe</h2>
-      <h4>Crust</h3>
-      <ul>
-        <li>200g (2 cups) graham cracker crumbs</li>
-        <li>100g (½ cup) melted butter</li>
-        <li>2 tbsp sugar</li>
-      </ul>
-      <h4>Cheesecake Filling</h3>
-      <ul>
-        <li>600g (24 oz) cream cheese, room temp</li>
-        <li>150g (¾ cup) sugar</li>
-        <li>3 large eggs, room temp</li>
-        <li>200ml (¾ cup) heavy cream</li>
-        <li>1 tsp vanilla extract</li>
-        <li>1 tbsp lemon juice</li>
-        <li>Pinch of salt</li>
-      </ul>
-      <h4>Raspberry Swirl</h3>
-      <ul>
-        <li>200g (1½ cups) fresh or frozen raspberries</li>
-        <li>2–3 tbsp sugar</li>
-        <li>1 tsp lemon juice</li>
-        <li>1 tsp cornstarch + 1 tbsp water (optional, for thicker sauce)</li>
-      </ul>
-      <h3>Instructions</h3>
-      <h4>Make the Crust</h4>
-      <ol>
-        <li>Preheat oven to 175°C (350°F).</li>
-        <li>Mix crumbs, sugar, and melted butter.</li>
-        <li>Press firmly into the bottom of a 9-inch springform pa</li>
-        <li>Bake 8–10 minutes. Cool.</li>
-      </ol>
-      <h4>Prepare Raspberry Sauce</h4>
-      <ol>
-        <li>Heat raspberries, sugar, and lemon juice in a small saucepan.</li>
-        <li>Cook until berries break down (5–7 min).</li>
-        <li>Strain seeds (optional).</li>
-        <li>Stir in cornstarch slurry if you want it thicker.</li>
-        <li>Cool completely.</li>
-      </ol>
-      <h4>Make the Filling</h4>
-      <ol>
-        <li>Beat cream cheese until smooth (don’t overmix).</li>
-        <li>Add sugar, mix gently.</li>
-        <li>Add eggs one at a time.</li>
-        <li>Mix in cream, vanilla, lemon juice, and salt.</li>
-      </ol>
-      <h4>Assemble</h4>
-      <ol>
-        <li>Pour filling over crust.</li>
-        <li>Drop spoonfuls of raspberry sauce on top.</li>
-        <li>Swirl gently with a knife or skewer.</li>
-      </ol>
-      <h4>Bake(For No Cracks!)</h4>
-      <ul>
-        <li>Place pan in a larger tray with hot water (water bath method).</li>
-        <li>Bake at 160°C (325°F) for 55–70 minutes.</li>
-        <li>Center should jiggle slightly.</li>
-        <li>Turn oven off, crack door open, let cool inside 1 hour.</li>
-      </ul>
-   <div class="post-redbar"></div>
+  <body>
+    <div id="hero">
+      <div id="bgd"></div>
+      <div id="hero__caption">
+        <div id="hero__title"><h1>Title goes here</h1></div>
+        <div id="hero__meta">
+          <p>This is a subtitle</p>
+          <p>September 25, 2023</p>
+        </div>
+        <a id="hero__cta" href="#">Learn More</a>
+      </div>
     </div>
-
-<script>
-const recipeButton = document.getElementById('recipeButton');
-  const recipePopup = document.getElementById('recipePopup');
-
-  recipeButton.addEventListener('click', () => {
-  recipePopup.classList.toggle('active');
-});
-
-// Optional: click outside to close
-document.addEventListener('click', (e) => {
-  if (!recipeButton.contains(e.target)) {
-    recipePopup.classList.remove('active');
-  }
-});
-</script>
-</body>
-</html>
+  </body>

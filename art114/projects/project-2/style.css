@@ -130,7 +130,57 @@ background-color: #95172C;
 .wok-landingpage-slogan p{
     margin-top: -30px;
 }
+* {
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+#bgd {
+        opacity: 0;
+        animation-name: fadeBgd;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        transition-timing-function: ease-out;
+      }
 
+       #google {
+        opacity: 0;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-delay: 2.4s;
+      }
+      #apple {
+        opacity: 0;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-delay: 3s;
+      }
+      #email{
+         opacity: 0;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-delay: 4s;
+      }
+
+       @keyframes fadeBgd {
+        from {
+          opacity: 0;
+          filter: blur(10px);
+          background-size: 200%;
+        }
+        to {
+          opacity: 1;
+          filter: blur(0);
+          background-size: 100%;
+        }
+    }
+     @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
 @media (max-width: 800px) {
 .bottom-header{
     flex-direction: column;
